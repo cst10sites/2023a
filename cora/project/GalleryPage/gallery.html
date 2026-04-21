@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="gallery.css">
+<link rel="icon" type="image/x-icon" href="../Extra/favicon.ico">       
+<title>Gallery</title>
+</head>
+<body>
+
+<img class="mainimg" src="gallerycollage.jpeg" alt="Studio Ghibili Gallery">
+
+
+<p id="title">Let's talk movies, specifically five iconic Studio Ghibili ones!</p>
+<div class="back1gallery">
+
+
+  <table style="width:85%">
+    <tr>
+
+      <th style= "width:20%">FILM NAMES</th>
+      <th style="width:30%">QUICK DESCRIPTION</th>
+          <th style="width:35%">WATCH THE TRAILOR HERE!</th>
+        </tr>
+        
+      <tr>
+      <td>1. THE SECRET WORLD OF ARRIETTY </td>
+      <td>The Secret World of Arrietty, released in Japan in 2010 takes place in a family home. It 
+          was based on the 1952 novel The Borrowers by Mary Norton. In this film Arrietty's family, survive by taking 
+          small things from the human home they secretly inhabit. When the family spots them, how will their live's change?</td>
+          <td><iframe width="450" height="240" src="https://www.youtube.com/embed/VlMe7PavaRQ" title="The Secret World of Arrietty 
+            Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+            encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+     </tr> 
+
+    <tr>
+      <td>2. SPIRITED AWAY</td>
+      <td>The incredible Spirited Away, directed and written by Hayao Miyazaki, was released in 2001.
+        The film went on to become the highest-grossing film in Japanese history. Spirited Away features
+        a teenage girl heroine who gets lost in an abandoned amusment park. Some main themes are
+        identity, isolation, loss and empowerment.</td>
+        <td> <iframe width="450" height="240" src="https://www.youtube.com/embed/AZL_zEeLg8o" title="Spirited Away (2001)
+          - Official Trailer - English Dub" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+          encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+    </tr>
+
+    <tr>
+      <td>3. THE WIND RISES</td>
+      <td> The Wind Rises is the 2013 tale of young protangonist Jiro Horikoshi's dream 
+        to become a pilot. The film was supposed to be released simultaneously with The Tale of
+      the Princess Kaguya, another Ghibli film, but in the end The Tale of the Princess Kaguya's 
+      realease date was delayed.</td>
+      <td> <iframe width="450" height="240" src="https://www.youtube.com/embed/RzSpDgiF5y8" title="The Wind Rises 
+        - Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+        gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </td>
+    </tr>
+
+    <tr>
+      <td>4. MY NEIGHBOR TOTORO</td>
+      <td>My Neighbor Totoro is a Ghibili classic for a reason. The fairly old, 1988 movie follows two young girls named
+          Satsuki and Mei along their journey with friendly wood spirits. The first meeting with Totoro happens
+          one rainy night while the girls wait for the bus and all of a sudden Totoro appears beside them.</td>
+          <td><iframe width="450" height="240" src="https://www.youtube.com/embed/WJC1qciW_3k" title="My Neighbour
+            (Neighbor) Totoro Trailer (English)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+    </tr>
+
+    <tr>
+      <td>5. HOWL'S MOVING CASTLE</td>
+      <td>Howl's Moving Castle is an amazing fantasy Ghibili film, released in 2004. The general premise
+    of the film is based on the Howl's Moving Castle 1986 novel by Diana Wynne Jones. The plot follows 
+  a young girl named Sophie on the adventure to break the curse inflicted on her,
+  after she was turned into a 90 year old women.</td>
+  <td><iframe width="450" height="240" src="https://www.youtube.com/embed/iwROgK94zcM" title="Howl's Moving Castle 
+    - Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+    </tr>
+  </table>
+
+</div>
+
+<!--Sidebar-->
+
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <!--<a href="index.html">Home</a>
+    <a href="music.html">Music</a>  
+    <a href="gallery.html">Gallery</a>
+    <a href="quiz.html">Quiz</a> --> 
+
+    <a href="../HomePage/index.html">Home</a>
+    <a href="../MusicPage/music.html">Music</a>  
+    <a href="../GalleryPage/gallery.html">Gallery</a>
+    <a href="../QuizPage/quiz.html">Quiz</a>
+</div>
+          
+<div id="main">
+
+
+<!--&#9776 is the hamburger sidebar-->
+    <button class="openbtn" onclick="openNav()">&#9776; </button>
+</div>
+
+
+<script>
+    /* When sidebar is open set the width to 250px and
+     the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+    /* When the sidebar is closes set the width  to 0 
+    and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+</script>  
+</body>
+
+
+
+
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 3</title>
+<link rel="icon" type="image/x-icon" href="FNV.ico">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div>
+
+<h1>HTML Guide<h1>
+<h2>Common HTML Tags inside &lt;body&gt;
+
+<p><a href="head.html">The Elusive Part 2<a></p>
+
+<table style="width:100%;">
+	<tr>
+	<th style="width:34%";>Tag</th>
+	<th style="width:33%";>Explanation</th>
+	<th style="width:33%;">Example</th>
+	</tr>
+
+	<tr>
+	<td>&lt;p&gt;</td>
+	<td>This tag is used for generic text and is arguably the most common in all of HTML.</td>
+	<td><p>"In anarchy, the law falls to the hand of the everyman. We're bound by the judgement of one another."</p></td>
+	</tr>
+	
+	<tr>
+	<td>&lt;h1, h2, h3&gt;</td>
+	<td>The first tag is used for big, iconic text and is often the main header of websites. The other two are smaller headers used for use as subheadings.</td>
+	<td><h1>"War?"</h1><h2>"This isn't war!"</h2><h3>"War has meaning - a cause to fight for!"</h3></td>
+	</tr>
+	
+	<tr>
+	<td>&lt;br&gt;</td>
+	<td>This tag is used for line breaks. It is simply convenient for making things look good.</td>
+	<td><br></td>
+	</tr>
+	
+
+	<tr>
+	<td>&lt;ol&gt;, &lt;li&gt;</td>
+	<td>These tags are used to create ordered, ranked lists.</td>
+	<td>
+	
+		<ol>
+		<li>"**** *****."</li>
+		<li>"Go to college."</li>
+		</ol>
+	
+	</td>
+	</tr>
+	
+	
+	<tr>
+	<td>&lt;ul&gt;, &lt;li&gt;</td>
+	<td>These tags are used to create unordered, bullet-point-style lists.</td>
+	<td>
+	
+		<ul>
+		<li>"We're the Angels of Death."</li>
+		<li>"And your prayers have been answered."</li>
+		<li>"*****!"</li>
+		</ul>
+
+	</td>
+	</tr>
+	
+	<tr>
+	<td>&lt;img&gt;</td>
+	<td>This tag is used for images - which are remarkably common online.</td>
+	<td><img alt="Las Vegas at night." style="width: 450px" src="https://media.timeout.com/images/104097123/image.jpg"></td>
+	</tr>
+	
+	<tr>
+	<td>&lt;tr, th, td&gt;</td>
+	<td>These tags are used to create tables like the one this text is confined within!</td>
+	<td>Just look around, man.</td>
+	</tr>
+	
+	<tr>
+	<td>&lt;hr&gt;</td>
+	<td>This tag is simply a convenient dividing line for when you need some segregation in your website!</td>
+	<td><p>The Suite Life of</p><hr><p>Zack & Cody</p></td>
+	</tr>
+	
+	<tr>
+	<td>&amp;lt;, &amp;gt;</td>
+	<td>These two tags are used to write lesser and greater than symbols - which may seem arbitrary until you realize I've been using it the whole time to mimic tag brackets.</td>
+	<td>&lt;&gt;</td>
+	</tr>
+
+	<tr>
+	<td>&lt;div&gt;</td>
+	<td>This tag is used to section off part of the site, such as into a box like this.</td>
+	<td>Just look at that beautiful dark blue border!</td>
+	</tr>
+
+</table>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+
+<style>
+
+body {
+
+	background-image: url("https://travel2next.com/wp-content/uploads/Beautiful-Chicago-at-night.jpg");
+	color: white;
+	font-family: Helvetica;
+	margin: 100px 25px;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+div {
+    padding: 50px;
+    background: rgba(0, 0, 80, 0.5);
+    color: white;	
+}
+	
+}
+
+</style>
+
+</head>
+<body>
+<div>
+<h2>Cpploe Clocker</h2>
+<button onclick="updateCPS();">Cpploe</button>
+
+<p>Clocks:</p><p id="display"></p>
+<br>
+<p>Time Elapsed:</p><p id="buttballs"></p>
+<br>
+<p>Clocks Per Second</p><p id="oblongulous"></p>
+<br>
+
+<img alt="Jazzimus Primordial." style="width: 200px" src="Saxophone.png">
+
+</div>
+</body>
+
+<script>
+var startTime = new Date();
+var nClicks = 0;
+function updateCPS() {
+	if (nClicks == 0) {
+		nClicks = nClicks + 1;
+		startTime = new Date();
+		document.getElementById('display').innerHTML = nClicks;
+		document.getElementById('oblongulous').innerHTML = CPS;
+		document.getElementById('buttballs').innerHTML = timeElapsed / 1000;
+		}
+	else {
+		var currentTime = new Date();
+		var timeElapsed = currentTime - startTime;
+		document.getElementById('buttballs').innerHTML = timeElapsed / 1000;
+		var CPS = nClicks / (timeElapsed / 1000);
+		document.getElementById('oblongulous').innerHTML = CPS;
+		document.getElementById('display').innerHTML = nClicks;
+		nClicks = nClicks + 1;
+	}
+}
+</script>
+</html>

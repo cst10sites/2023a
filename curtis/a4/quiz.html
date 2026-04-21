@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+</head>
+<body>
+<h1>Quiz</h1>
+<p><a href="index.html">Cookie Clicker</a></p>
+<form>
+	<label>HTML is a programming language.</label><br>
+	<input type="radio" value="True" name="group">
+	<label>True</label><br>
+	<input type="radio" value="False" name="group" id="answer">
+	<label>False</label><br>
+	<input type="reset"><br>
+	<input type="button" value="Submit" onclick="check();">
+</form>
+
+<script>
+function check() {
+	var answer = document.getElementById("answer").checked;
+	if (answer == true) {
+		alert("Correct")
+	}
+	
+	else {
+		alert("False")
+	}
+}
+</script>
+</body>
+</html>

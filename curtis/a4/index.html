@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+
+<style>
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+body {
+	text-align: center;
+	font-family: Garamond;
+	background-color: beige;
+	
+}
+
+h1, h2 {
+    color: #660000;
+}
+</style>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<h1>Cookie Clicker Game</h1>
+<h2><a href="quiz.html">Quiz</a></h2>
+<p>Click the cookie as fast as you can to see how fast your CPS is.</p>
+
+<h2>Your CPS</h2>
+<input style="width:30%;" type="image" src="https://pngimg.com/uploads/cookie/cookie_PNG13656.png" onclick="updateCPS()" alt="cookie" class="center">
+<p id='cookie'></p>
+
+<h2>Total Clicks</h2>
+<p id="display">0</p>
+
+<h2>Time Elapsed</h2>
+<p id="time"></p>
+
+<input type="reset">
+<script>
+startTime = Date()
+nClicks = 0
+/*assign button onclick to updateCPS()
+if nClicks = 0, then set startTime = new Date() again and increase nClicks by 1.
+If nClicks > 0, then subtract currentTime by startTime (to calculate timeElapsed) and increase nClicks by 1; 
+display CPS on screen where CPS = nClicks ÷ timeElapsed and timeElapsed is measured in seconds.
+*/
+
+function showClicks() {
+	nClicks = nClicks + 1;
+	document.getElementById('display').innerHTML = nClicks;
+}
+
+function updateCPS() {
+	if (nClicks == 0) {
+		startTime = new Date()
+		nClicks = nClicks + 1
+		document.getElementById('display').innerHTML = nClicks;
+	}
+	
+	else {
+		currentTime = new Date()
+		timeElapsed = currentTime - startTime
+		nClicks = nClicks + 1
+		CPS = nClicks / (timeElapsed / 1000)
+		document.getElementById('cookie').innerHTML = CPS
+		document.getElementById('display').innerHTML = nClicks;
+	}
+}
+
+setInterval(updateTime, 100)
+
+function updateTime() {
+    if (nClicks > 0) {
+        currentTime = new Date()
+	    timeElapsed = currentTime - startTime
+	    document.getElementById("time").innerHTML = timeElapsed / 1000
+    }
+}
+
+</script>
+</body>
+</html>

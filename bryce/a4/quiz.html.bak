@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+
+<style>
+
+body {
+
+	background-image: url("https://travel2next.com/wp-content/uploads/Beautiful-Chicago-at-night.jpg");
+	color: white;
+	font-family: Helvetica;
+	margin: 100px 25px;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+div {
+    padding: 50px;
+    background: rgba(0, 0, 80, 0.5);
+    color: white;	
+}
+	
+}
+
+</style>
+
+</head>
+<body>
+<div>
+<h2>Funny HTML Quiz!</h2>
+
+<form>
+	<label>What is your mother father's credit card number debit card number?</label><br>
+	<input type="text" id="=info"><br>
+	<br>
+	<label>What is your moms's social security number?</label><br>
+	<input type="text" id="=info"><br>
+	<br>
+	<label>What is the IP address of your computer?</label><br>
+	<input type="text" id="=info"><br>
+	<br>
+	<label>Where do you live in?</label><br>
+	<input type="text" id="=info"><br>
+	<br>
+	<label>What computer password is?</label><br>
+	<input type="password" id="=info"><br>
+	<br>
+</form>
+
+<br>
+
+<form>
+
+	<label>Does your home contain valuable?<label><br>
+
+    <input id="correct" type="radio" value="Yes" name="group">
+    <label>Yes</label><br>
+    <input type="radio" value="No" name="group">
+    <label>No</label><br>
+    <input type="radio" value="Yope" name="group">
+    <label>Yope</label><br>
+    <input type="button" value="Submit" onclick="checkValue();"><br> 
+    <input type="reset"><br> 
+
+</form>
+
+<br>
+
+<form>
+
+    <label>What does your home has?</label><br>
+    <input id="choice1" type="checkbox" value="fridge">
+    <label>Refrigetator</label>
+    <input id="choice2" type="checkbox" value="money">
+    <label>Money</label><br>
+    <input id="choice3" type="checkbox" value="eastvan">
+    <label>My home is within the East Vancouver area</label>
+    <input id="choice4" type="checkbox" value="parent">
+    <label>Parent/guardian</label><br>
+    <input type="button" value="Submissive" onclick="checkSumbissive();"><br> 
+    <input type="reset"><br> 
+
+</form>
+
+<br>
+
+<form>
+
+<label>What color is your favorite color?</label>
+    <select id="colorValue">
+        <option value="White">White</option>
+        <option value="Yllelwlow">Yllelwlow</option>
+        <option value="Brown">Brown</option>
+        <option value="Grewn">Grewn</option>
+		<option value="Eesdesesesrdt">Eesdesesesrdt</option>
+		<option value="Italy">Italy</option>
+		<option value="Italy">Sicily</option>
+    </select>
+    <br>
+    <input type="button" value="OK" onclick="checkColor();">
+    <input type="reset">
+
+</form>
+
+<br>
+
+<p id="colorDisplay"></p>
+
+<br>
+
+<form>
+
+	<label>What does HTML stand for?<label><br>
+
+    <input type="radio" value="My mom's credit card number is 4654785496742834" name="group">
+    <label>My mom's credit card number is 4654785496742834</label><br>
+	
+    <input id="correct" type="radio" value="Hypertext Markup Language" name="group">
+    <label>Hypertext Markup Language</label><br>
+    
+	<input type="radio" value="CSS" name="group">
+    <label>CSS</label><br>
+    
+	<input type="radio" value="Pizza Lasagna" name="group">
+    <label>Pizza Lasagna</label><br>
+
+	<input type="radio" value="Sword Art Online" name="group">
+    <label>Sword Art Online</label><br>
+
+	<input type="radio" value="Big Hard Juicy and Meaty" name="group">
+    <label>Big Hard Juicy and Meaty</label><br>
+
+	<input type="button" value="Submit" onclick="checkValue2();"><br> 
+    <input type="reset"><br> 
+
+
+</form>
+
+<script>
+function checkValue() {
+    var correct = document.getElementById("correct").checked;
+    
+    if (correct == true) {
+        alert("👍");
+    }
+    else {
+        alert("👎");
+    }
+    
+}
+
+function checkValue2() {
+    var correct = document.getElementById("correct").checked;
+    
+    if (correct == true) {
+        alert("👍");
+    }
+    else {
+        alert("👎");
+    }
+    
+}
+
+function checkSumbissive() {
+    var choice1 = document.getElementById("choice1").checked;
+    var choice2 = document.getElementById("choice2").checked;
+    var choice3 = document.getElementById("choice3").checked;
+    var choice4 = document.getElementById("choice4").checked;
+    
+    if (choice2 == true && choice3 == true && choice4 == false) {
+        alert("👍");
+	}
+	else {
+		alert("👎");
+    }   
+
+
+}
+
+function checkColor() {
+    var chosenCar = document.getElementById("colorValue").value;
+
+    document.getElementById("colorDisplay").innerHTML = 
+        "WRONG! BAD COLOR! " + chosenCar;
+}
+</script>
+
+</div>
+</body>
+</html>

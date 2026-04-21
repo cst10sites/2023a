@@ -1,0 +1,44 @@
+body {
+	background-color: black;
+	background-image: url("https://cdn.pixabay.com/photo/2019/10/08/14/24/futuristic-4535174_1280.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%; 
+	background-attachment: fixed;
+	color: white;
+	font-family: Verdana;
+	margin: 100px 25px;
+	
+}
+
+h1 {
+	-webkit-text-stroke: 1px white;
+}
+
+div {
+	padding: 50px;
+	background: rgba(101, 102, 103, 0.5);
+	/* rgba(Red, Green, Blue, Alpha/Opacity) */
+	color: white;
+}
+
+a{	
+	color: lime;
+}
+
+a:hover{
+	color: red;
+}
+
+table,th, td{
+	border: 2px solid;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+th, td{
+	padding: 5px;
+	text-align: center
+}
+

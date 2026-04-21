@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/x-icon" href="../Extra/favicon.ico">    
+<title>Studio Ghibli</title>
+</head>
+
+<body class="homepage">
+
+  
+<div class="imgcontainer">
+   <img id="imgSlideshow" src="arriettyspotted.jpeg" 
+ style="width:100%" alt="slideshow of images">
+<div class="onimage"> <h1>STUDIO GHIBLI</h1> </div>
+</div>
+<h2 class="homepage">Welcome To Cora's <br> Studio Ghibli Website</h2>
+<hr>
+<br><br>
+
+
+<h4 class="homepage">Made by Cora Ilic in CST 10</h4>
+
+<br>
+
+<div class="back1home">
+<h3 class="homepage">Studio Ghibli is Japanese animation studio based in Tokyo.
+They have created many beloved films such as<em> My Neighbor Totoro,
+Howl's Moving Castle</em> and<em> The Secret World Of Arrietty.</em> This website will
+explore Studio Ghibli's history, music, animation style, and films. Continue reading
+the main page for some key dates of the studio's history. <br> <br> Click on the 
+hamburger button in the top left corner to see the sidebar menu. </h3>
+<img class="homepage" src="sglogo.png" alt="Studio Ghibli Logo">
+<a href="https://www.instagram.com/ghibliusa/" target="_blank">
+  <img id="Instagram" src="InstagramBlackLogo.jpeg" alt="Instagram Logo"></a>
+
+</div>
+
+
+<div class="back2home">
+ <img class="Timeline" alt="Totoro waving" id="TotoroGif"
+  src="totorowaving.gif">
+<ul class="Timeline">
+  <li id="title"> MINI TIMELINE OF STUDIO GHIBLI </li>
+    <li>January 5, 1941: Birth of Hayao Miyazaki, cofounder of <br> Studio Ghibli </li>
+  <li>June 15, 1985: Founding of Studio Ghibli</li>
+  <li>June 2, 1988: Release date of hit animation My Neighbor <br> Totoro</li>
+  <li>April 2022: Studio Ghibli left Tokuma Shoten and became<br>
+    an independant company </li>
+  <li>June 10, 2005: Release date of Howl's Moving Castle</li>
+  <li>February 17, 2010: Release date of Arrietty <br>
+    (Known as The Secret World of Arrietty in North America)</li>
+</ul>
+</div>
+
+
+<!--Sidebar-->
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="../HomePage/index.html">Home</a>
+    <a href="../MusicPage/music.html">Music</a>  
+    <a href="../GalleryPage/gallery.html">Gallery</a>
+    <a href="../QuizPage/quiz.html">Quiz</a>
+</div>
+          
+<div id="main">
+
+<!--&#9776 is the hamburger sidebar-->
+    <button class="openbtn" onclick="openNav()">&#9776; </button>
+</div>
+
+
+
+<script>
+    /* When sidebar is open set the width to 250px and
+     the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+    /* When the sidebar is closes set the width  to 0 
+    and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+
+/*Image slideshow*/
+var images = new Array();
+// file names of images
+    images[0] = "sgclouds.jpeg"; 
+    images[1] = "arriettybedroom1.jpeg";
+    images[2] = "forestfallenlog.jpeg";
+    images[3] = "onthebeach.jpeg";
+    images[4] = "arriettybedroom2.jpg";
+    images[5] = "sgholdinghat.jpeg";
+
+     setInterval("changeImage()", 1500); //change every 1.5 seconds
+     var x=0;
+
+     function changeImage()
+     {
+            document.getElementById("imgSlideshow").src=images[x]
+            x++;
+            if (images.length == x) 
+            {
+             x = 0;
+            }
+     }
+
+
+</script>
+</body>
+ 
+</html>

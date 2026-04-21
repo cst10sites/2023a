@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+
+<style>
+
+body {
+
+	background-image: url("https://travel2next.com/wp-content/uploads/Beautiful-Chicago-at-night.jpg");
+	color: white;
+	font-family: Helvetica;
+	margin: 100px 25px;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+div {
+    padding: 50px;
+    background: rgba(0, 0, 80, 0.5);
+    color: white;	
+}
+	
+}
+
+</style>
+
+</head>
+<body>
+<div>
+<h1>The Delumptuous Collection of Websitular Games</h1>
+<h2>Cpploe Clocker</h2>
+<p><a href="cookie.html">Cookus</a></p>
+<h2>Quz</h2>
+<p><a href="quiz.html">Cromulent</a></p>
+</div>
+</body>
+</html>
