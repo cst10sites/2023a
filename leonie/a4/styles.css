@@ -1,0 +1,21 @@
+table, th{ 
+	
+}
+h1{ 
+	text-align: center;
+	
+}
+a {
+	text-decoration: none;
+	color: white;
+	
+}
+a:hover {
+	color: yellowgreen;
+}
+h2 {
+	text-align: center;
+}
+label {
+	font-size: 1.3em;
+}

@@ -1,0 +1,42 @@
+body{
+	margin: 50px 50px;
+	font-family: sans-serif;
+	background-color:tan;
+	color:black;
+	
+
+}
+h1{
+	color: white;
+}
+table, th, td{
+	border:2px solid black;
+	font-size:1em;
+	
+
+}
+table{
+	border-collapse: collapse;
+	border-radius: 25px;
+}
+th, td{
+	padding:5px;
+	text-align:left;
+}
+a{
+	color:steelblue;
+}
+th{
+	background-color: gainsboro;
+}
+div{
+	background-color: lightsalmon;
+	padding:25px;
+	color: black;
+}
+a{
+		
+}
+h4{
+	color: lightslategrey;
+}

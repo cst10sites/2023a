@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Favorite Plants</title>
+<link rel="icon" type="image/x-icon" href="flower.ico">
+<link rel="stylesheet" href="styles.css">
+<style>
+div{
+	background-color: rgba(105, 163, 81, 0.3);
+	padding: 30px;
+	margin: 10px 275px;
+}
+</style>
+</head>
+
+<body>
+<h1>My Favorite Plants</h1>
+<table>
+	
+	<tr>
+	<th><a href="index.html">Home</a></th>
+	<th><a href="pileapepperomia.html">My Favorite Indoor plant</a></th>
+	<th><a href="snakeplant.html">Indoor Plants</a></th>
+	<th><a href="pothos.html">What Plant Are You Quiz</a></th>
+	</tr>
+
+</table>
+<h1>Indoor Plants</h1>
+<div>
+<img src="wfa.jpg" alt="image of orchid" style="float: right; width: 25%; padding: 10px;"> 
+
+<h2>Easy difficulty</h2>
+<p>The easiest route that most people take when buying their first indoor plant is buying a tropical plant which is a great option since
+they require watering around onece per week which is pretty good. I beleive that these plants are better than succulents even though they need to 
+be watered more frequently since it's easier to forget about succulents while sitting in a corner, these plants will not die after being neglected 
+up to a month depending on the plant.
+</p>
+<h3>My favorite tropical plants</h3>
+<ul>
+	<li>Pilea pepperomia</li>
+	<li>anthurium</li>
+	<li>Pothos</li>
+</ul>
+<p>These are great plants because they are nice to look at and don't require too much attention</p>
+<img src="wfo.jpg" alt="image of orchid" style="float: right; width: 25%; padding: 10px;"> 
+<h2>Medium</h2>
+<p>I consider a medium difficulty plant to be a plant that needs to be watered more frequently, around once every 3 days
+these.
+</p>
+<h3>My favorite medium difficulty plants</h3>
+<ul>
+	<li>Peace lilly</li>
+	<li>turtle vine</li>
+	<li>Alocasia Pink Princess</li>
+	<li>Orchid</li>
+</ul>
+<p>I consider these options medium difficulty since there is a greater consequence if you neglect them, for example the leafs of the peace lilly will droop,
+the tiny leaves of the turtle vine can burn or turn brown and can become a tedious task to pluck them out and the alocatia pink princess
+begins to sweat water droplets if overwatered and will droop and fall which can cause the stem to break and cause a difficult recovery.</p>
+<p>I consider orchids a medium difficulty plant since many people will give up on them, their blooms don't last very lond and look slightly bald a lot of 
+the time, they also need fertalization around once a month, and people don't alwayse treat them correct which is why they end up dying, so this is not a 
+great first plant, however a beautiful flower to own after familiarizing with the plant world.</p>
+</div>
+</body>
+</html>

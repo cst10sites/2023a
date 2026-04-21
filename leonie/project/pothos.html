@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Favorite Plants</title>
+<link rel="icon" type="image/x-icon" href="flower.ico">
+<link rel="stylesheet" href="styles.css">
+<style>
+
+div{
+	
+}
+.button {
+	background-color: rgba(86, 119, 48, 1);
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.27em;
+	border-radius: 12px;
+}
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+	
+</style>
+
+</head>
+
+<body>
+<h1>My Favorite Plants</h1>
+<table>
+	
+	<tr>
+	<th><a href="index.html">Home</a></th>
+	<th><a href="pileapepperomia.html">My Favorite Indoor plant</a></th>
+	<th><a href="snakeplant.html">Indoor Plants</a></th>
+	<th><a href="pothos.html">What Plant Are You Quiz</a></th>
+	</tr>
+
+</table>
+<h1>What Plant Are You Quiz</h1>
+<div style="background-color: rgba(255, 95, 88, 0.6); padding: 50px; margin: 50px 100px;">
+
+	<div id="plantname">
+		<br>
+		<img src="wfq.jpg" style="float:right; width: 27%;">
+	</div>
+<form>
+
+	<!-- question 1-->
+    <label for="" style="font-size: 1.35em; color:rgba(86, 119, 48, 1); font-family: Arial, Helvetica, sans-serif;"> <strong>What is your favorite season?</strong></label><br>
+	<input type="radio" name="q1" id="1p1" value="p">
+	<label>Winter</label>
+	<input type="radio" name="q1" id="1p2" value="p">
+	<label>Fall</label>
+	<input type="radio" name="q1" id="1p3" value="p">
+	<label>Spring</label>
+	<input type="radio" name="q1" id="1p4" value="p">
+	<label>Summer</label><br><br>
+	
+	<!--question 2 -->
+	<label for=""style="font-size: 1.35em; color:rgba(86, 119, 48, 1);font-family: Arial, Helvetica, sans-serif;"><strong> What is your favorite sport?</strong></label><br>
+	<input type="radio" name="question2" id="2p1" value="p">
+	<label>Hockey</label>
+	<input type="radio" name="question2" id="2p2" value="p">
+	<label>Soccer</label>
+	<input type="radio" name="question2" id="2p3" value="p">
+	<label>Football</label>
+	<input type="radio" name="question2" id="2p4" value="p">
+	<label>Volleyball</label>
+	<input type="radio" name="question2" id="2p5" value="p">
+	<label>Other</label><br><br>
+	<!--rename id-->
+	<label for=""style="font-size: 1.35em; color:rgba(86, 119, 48, 1);font-family: Arial, Helvetica, sans-serif;"> <strong>What is your favorite color?</strong></label><br>
+	<input type="radio" name="question3" id="3p1" value="p">
+	<label>Blue</label>
+	<input type="radio" name="question3" id="3p2" value="p">
+	<label>Pink</label>
+	<input type="radio" name="question3" id="3p3" value="p">
+	<label>Green</label>
+	<input type="radio" name="question3" id="3p4" value="p">
+	<label>Red</label>
+	<input type="radio" name="question3" id="3p5" value="p">
+	<label>Other</label><br><br>
+	
+	<label for=""style="font-size: 1.35em; color:rgba(86, 119, 48, 1);font-family: Arial, Helvetica, sans-serif;"><strong> What is your dream pet?</strong></label><br>
+	<input type="radio" name="question4" id="4p1" value="p">
+	<label>Fish</label>
+	<input type="radio" name="question4" id="4p2" value="p">
+	<label>Cat</label>
+	<input type="radio" name="question4" id="4p3" value="p">
+	<label>bird</label>
+	<input type="radio" name="question4" id="4p4" value="p">
+	<label>Dog</label>
+	<input type="radio" name="question4" id="4p5" value="p">
+	<label>Other</label><br><br>
+	
+	<label for=""style="font-size: 1.35em; color:rgba(86, 119, 48, 1);font-family: Arial, Helvetica, sans-serif;"><strong>What is your favorite fruit juice?</strong></label><br>
+	<input type="radio" name="question5" id="5p1" value="p" >
+	<label>Orange</label>
+	<input type="radio" name="question5" id="5p2" value="p">
+	<label>Pomegranate</label>
+	<input type="radio" name="question5" id="5p3" value="p">
+	<label>Apple</label>
+	<input type="radio" name="question5" id="5p4" value="p" onclick="animate();">
+	<label>Guava</label><br><br>
+	
+	
+	
+	
+	
+	<input type="button" value="submit" onclick="checkPersonality();" class="button">
+	<div id="displayPersonality" style="background-color: rgba(255, 95, 88, 0.6); padding: 50px; margin: 50px 100px;"></div>
+	
+	
+</form>
+</div>
+<script>
+var p = 0;
+
+
+function checkPersonality() {
+	var points = 0;
+
+	
+	// Question 1
+	var ans1p1 = document.getElementById("1p1").checked;
+	var ans1p2 = document.getElementById("1p2").checked;
+	var ans1p3 = document.getElementById("1p3").checked;
+	var ans1p4 = document.getElementById("1p4").checked;
+	
+	if (ans1p1 == true) {
+		points = points + 1
+	}
+	if (ans1p2 == true) {
+		points = points + 2
+	}
+	if (ans1p3 == true) {
+		points = points + 3
+	}
+	if (ans1p4 == true) {
+		points = points + 4
+	}
+
+	// Question 2
+	var ans2p1 = document.getElementById("2p1").checked;
+	var ans2p2 = document.getElementById("2p2").checked;
+	var ans2p3 = document.getElementById("2p3").checked;
+	var ans2p4 = document.getElementById("2p4").checked;
+	var ans2p5 = document.getElementById("2p4").checked;
+	var ans2p5 = document.getElementById("2p5").checked;
+	
+	if (ans2p1 == true) {
+		points = points + 1
+	}
+	if (ans2p2 == true) {
+		points = points + 2
+	}
+	if (ans2p3 == true) {
+		points = points + 3
+	}
+	if (ans2p4 == true) {
+		points = points + 4
+	}	
+	if (ans2p5 == true) {
+		points = points + 5                                                                                                                                                                                                                                        
+	}	
+	
+	// Question 3
+	var ans3p1 = document.getElementById("3p1").checked;
+	var ans3p2 = document.getElementById("3p2").checked;
+	var ans3p3 = document.getElementById("3p3").checked;
+	var ans3p4 = document.getElementById("3p4").checked;
+	var ans3p5 = document.getElementById("3p4").checked;
+	var ans3p5 = document.getElementById("3p5").checked;
+	
+	if (ans3p1 == true) {
+		points = points + 1
+	}
+	if (ans3p2 == true) {
+		points = points + 2
+	}
+	if (ans3p3 == true) {
+		points = points + 3
+	}
+	if (ans3p4 == true) {
+		points = points + 4
+	}	
+	if (ans3p5 == true) {
+		points = points + 5                                                                       
+	}
+	
+	// Question 4
+	var ans4p1 = document.getElementById("4p1").checked;
+	var ans4p2 = document.getElementById("4p2").checked;
+	var ans4p3 = document.getElementById("4p3").checked;
+	var ans4p4 = document.getElementById("4p4").checked;
+	var ans4p5 = document.getElementById("4p4").checked;
+	var ans4p5 = document.getElementById("4p5").checked;
+	
+	if (ans4p1 == true) {
+		points = points + 1
+	}
+	if (ans4p2 == true) {
+		points = points + 2
+	}
+	if (ans4p3 == true) {
+		points = points + 3
+	}
+	if (ans4p4 == true) {
+		points = points + 4
+	}	
+	if (ans4p5 == true) {
+		points = points + 5                                                                       
+	}
+	
+	// Question 5
+	var ans5p1 = document.getElementById("5p1").checked;
+	var ans5p2 = document.getElementById("5p2").checked;
+	var ans5p3 = document.getElementById("5p3").checked;
+	var ans5p4 = document.getElementById("5p4").checked;
+	
+	if (ans5p1 == true) {
+		points = points + 1
+	}
+	if (ans5p2 == true) {
+		points = points + 2
+	}
+	if (ans5p3 == true) {
+		points = points + 3
+	}
+	if (ans5p4 == true) {
+		points = points + 4
+	}
+	
+	
+	// Combinations of quiz results
+	if (points >=5 && points <=7){
+		document.getElementById("displayPersonality").innerHTML =
+		"You are the ZZ Plant, you most likley enjoy colder climate and are a lower maintnance individual."
+		document.getElementById("plantname").innerHTML = "<img src=\"wfzz.jpg\" style=\"width:35%;float: right;\">"
+	} 
+	else if (points >=8 && points <=11){
+		document.getElementById("displayPersonality").innerHTML =
+		"You are the Pothos plant, you most likley a competitive individuel who enjoys a sunny or snowy day."
+		document.getElementById("plantname").innerHTML = "<img src=\"wfpp.jpg\" style=\"width:25%;float: right;\">"
+	}
+	else if (points >=12 && points <=15){
+		document.getElementById("displayPersonality").innerHTML =
+		"You are a peace lilly, you like having fun, but need some time to recharge after a day of socializing."
+		document.getElementById("plantname").innerHTML = "<img src=\"wfpl.jpg\" style=\"width:35%;float: right;\">"
+	}
+	else if (points >=16 && points <=19){
+		document.getElementById("displayPersonality").innerHTML =
+		"You are a fern, an outdoorsy active individual "
+		document.getElementById("plantname").innerHTML = "<img src=\"wff.jpg\" style=\"width:50%;float: right;\">"
+	}
+	else if (points >=20 && points <=23){
+		document.getElementById("displayPersonality").innerHTML =
+		"You are a hydrangia, most likeley an indecisive person who is kind."
+		document.getElementById("plantname").innerHTML = "<img src=\"wfh.jpg\" style=\"width:50%;float: right;\">"
+	}
+	else {
+		document.getElementById("displayPersonality").innerHTML = 
+		"Please select more answers to each question for a plant.";
+		document.getElementById("plantname").innerHTML = "<img src=\"wfq.jpg\" style=\"width:27%;float: right;\">"
+
+
+
+	}
+	// Final Score
+	//alert("Score: " + points);
+}
+
+
+
+
+</script>
+
+</body>
+</html>

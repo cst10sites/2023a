@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Favorite Plants</title>
+<link rel="icon" type="image/x-icon" href="flower.ico">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>My Favorite Plants</h1>
+<table>
+	
+	<tr>
+	<th><a href="index.html">Home</a></th>
+	<th><a href="pileapepperomia.html">My Favorite Indoor plant</a></th>
+	<th><a href="snakeplant.html">Indoor Plants</a></th>
+	<th><a href="pothos.html">What Plant Are You Quiz</a></th>
+	</tr>
+
+</table>
+<div style= "background-color: rgba(105, 163, 81, 0.3); padding: 50px; margin: 50px 200px;">
+<h1>Pilea Pepperomia</h1>
+
+<h2>Description</h2>
+<p>The Pilea Pepperomia otherwise known as a chinese money plant is a nice indoor plant that is almost as easy as it gets when it comes to taking care of plants. 
+It does not require any special attention or care and it is not a time consuming plant to take care of. Difficulty wise i would rate it a 2 out of 5, 1 being the easiest plant to take care of
+and 5 being the most difficult.</p>
+
+<h2>Watering Schedule</h2>
+<p>The Pilea Pepperomia, like many other plants should not have a specific watering schedule.</p>
+<p>Indications that a Pilea Pepperomia should be watered</p>
+<ul>
+	<li>The pot feels light or hollow upon lifting</li>
+	<li>Any of the leaves are drooping or becoming limp</li>
+	<li>The top of the soil is dry or hard to the touch.</li>
+	
+</ul>
+<img alt="image of pilea pepperomia" style="width: 24%; float: right; padding: 10px;" src="pileac.jpg">
+<h3>There are multiple methods of watering a Pilea but here are two most useful.</h3>
+<h4>Method 1: bottom watering</h4>
+<p>Bottom watering plants is an exellent choice since they can never be over or underwatered, the plants will take what they need no more, no less.
+This method only works if the plant pot has holes in the bottom so that the soil can absorb the water.
+If the water line does not descend after 15 minutes of soaking in the water then top watering is a better option, this method can
+fails if the plants roots arn't deep enough to soak up the water.</p>
+
+<p>To bottom water a plant</p>
+<ol>
+	<li>Start by grabbing a bowl big enough for the plant pot.</li>
+	<li>Next place the plant pot into the bowl and fill up the bowl until it reaches a line at half of the pot size.</li>
+	<li>Let the pot sit in the water for at least 15 minutes and no more than 3 hours.</li>
+	
+</ol>
+
+
+
+<h4>Method 2: top watering</h4>
+<p>This method is functional, but needs more attention to make sure the plant doesn't get over or under watered. </p>
+<ol>
+	<li>Fill the pot with a layer of water and wait for the water to drain</li>
+	<li>fill the pot 2 more times with less water and make sure that it can drain out or if it can't fill once and DO NOT OVERFILL</li>
+
+
+</ol>
+
+<h2>Sunlight And Placement Guide</h2>
+<p>The Pilea likes to have a bright spot near a window prefferably out of direct sunlight if the spot is too hot, and the leaves are burning 
+try to relocate to a cooler spot and if the plant isn't growing try to relocate to a brighter spot. </p>
+
+
+<h2>Propogation</h2>
+<img alt="image of pilea pepperomia" style="width: 25%; padding: 5px; float: right;" src="propogatepilea.jpg">
+<p>If the pilea is starting to need more frequent watering and has some off shutes that have at least one inch on stem above the soil then it may be time to propogate. Propogation
+ is growing a new plant and old one and if usually fairly easy.</p>
+<p>How to propogate</p>
+<ol>
+	<li>Start of by digging a  little bit under one of the off shutes.</li>
+	<li>Next, cut the off shute with around 1-1.5 inches of stem without leaves.</li>
+	<li>After the off shute has been cut, place the stem into a glass or container with water that is deep enough to hold the plant,
+	this step works best with a clear container so that the roots are visible.</li>
+	<li>Place the pilea slightly in the shate of a bright spot and let it form roots for a few weeks.</li>
+	<li>Once the plant has enough roots, plant it in a pot with drainage holes and give it a genorous water on the first one, then water as if a normal pilea and keep a good eye on it.</li>
+
+
+</ol>
+
+
+<h2>Common issues</h2>
+<ul>
+	<li>Bad placement: make sure the plant has enough light</li>
+	<li>Underwatered and dry: make sure that the plant is adequitely watered.</li>
+	<li>Moldy soil: if the soil is moldy leave the pot outside for one day to air it out.</li>
+</ul>
+</div>
+</body>
+</html>

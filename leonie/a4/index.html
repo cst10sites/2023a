@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel= "stylesheet" href="styles.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<style>
+body{
+	background-color: lightgrey;
+	font-family: georgia;
+	
+}
+div {
+	border-style: solid;
+	padding: 25px;
+	margin: 50px;
+	border-radius: 12px;
+	border-color: white;
+}
+
+</style>
+</head>
+
+<body>
+<h1>Assignment 4</h1>
+<table style="width: 100%; font-family: arial;">
+	<tr>
+	<th><a href="cookie.html">cookie clicker</a></th>
+	<th><a href="index.html">coding language quiz</a></th>
+	</tr>
+</table>
+<h2>Coding Language Quiz</h2>
+<div>
+<form>
+    <label style="font-size: 1.2em";>Which language is used to change the background color of a website?</label><br>
+    <input type="radio"  value="HTML" name="group">
+    <label>HTML</label><br>
+    <input type="radio" id = "correctLang" value="CSS" name="group">
+    <label>CSS</label><br>
+    <input type="radio" value="JavaScript" name="group">
+    <label>JavaScript</label><br>
+	<input type="button" value="Submit" onclick="checkLang();"><br> 
+    <input type="reset"><br> 
+</form>
+<br>
+<form>
+    <label>What is the language used to define a function</label>
+    <select id="langValue">
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="JS">JS</option>
+    </select>
+    <br>
+    <input type="button" value="OK" onclick="seeLang();">
+    <input type="reset"><br> 
+</form>
+</div>
+
+
+
+
+
+<script>
+function checkLang() {
+
+	var correctAnswer = document.getElementById("correctLang").checked;
+
+	if (correctAnswer == true) {
+		alert ("correct");
+	}
+	else {
+		alert("Wrong answer");
+	}
+}
+
+function seeLang() {
+    var chosenLang = document.getElementById("langValue").value;
+    
+	if (chosenLang == "JS"){
+		document.getElementById("langDisplay").innerHTML = 
+		"Yes Javascript is the language used to create a function!"
+	}
+	else {
+		document.getElementById("langDisplay").innerHTML =
+		"NO THIS IS THE WRONG ANSWER!"
+	}
+} 
+
+</script>
+
+
+
+
+</body>
+</html>
