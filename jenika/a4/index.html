@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Single question quiz</title>
+</head>
+<body>
+<a href="cookie.html">Cookie clicker</a>
+<h2>Which HTML element has no content?</h2>
+<form>
+	<label>Select the corrrect element:</label><br>
+	<input id ="correctElement"type="radio" value="br" name="group">
+	<label>&lt;br&gt;</label><br>
+    <input type="radio" value="p" name="group">
+    <label>&lt;p&gt;</label><br>
+	<input type="radio" value="h1" name="group">
+    <label>&lt;h1&gt;</label><br>
+    <input type="button" value="Submit" onclick="checkElement();"><br> 
+	<input type="reset"><br> 
+</form>
+<script>
+function checkElement() {
+	var correctAnswer = document.getElementById("correctElement").checked;
+	
+	if (correctAnswer == true) {
+		alert ("That's the correct answer!");
+	}
+	else{
+		alert ("Oops reset and try again")
+	}
+}
+</script>
+</body>
+</html>

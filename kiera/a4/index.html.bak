@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4 - Quiz</title>
+<style> </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h3>Click <a href="cookie.html">here</a> to go to the cookie clicker.</h3>
+<h1>Quiz</h1>
+<form>
+    <label>How do I link an &lt;a> tag?</label>
+    <select id="carValue"><!--no input for dropdown-->
+        <option value=" < a hre='hi'>"> &lt;a hre='hi'&gt; </option>
+        <option value="< a href='hi'> < /a>">&lt;a href='hi'> &lt;/a></option>
+        <option value="GOOOOO A TAG">GOOOOO A TAG</option>
+        <option value="A link">A link</option>
+    </select>
+    <br>
+    <input type="button" value="OK" onclick="checkCar();">
+  <button onclick="reset()">Reset</button>
+	<p id="carDisplay"></p>
+</form>
+<div>
+</div>
+<script>
+function reset() {
+	window.location.reload();
+}
+function checkCar() {
+    var chosenCar = document.getElementById("carValue").value;
+    // .value is used for input and select tags to get data from them
+
+   if (chosenCar == "< a href='hi'> < /a>" ) {
+		document.getElementById("carDisplay").innerHTML = 
+		"Yay, you got it" + chosenCar + " is how you link using and &lt;a> tag."
+		}
+	else {
+	document.getElementById("carDisplay").innerHTML = 
+        "No, you are stupid " + chosenCar + " is not how to link using an &lt;a> tag.";
+   
+	}
+	
+}
+</script>
+</body>
+</html>

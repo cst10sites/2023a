@@ -1,0 +1,27 @@
+body {
+	background-color: LemonChiffon;
+	background-attachment: fixed;
+	background-size: 100%; 
+	font-family: Courier;
+	margin: 100px 25px;
+	text-align: center;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+
+table, th, td {
+	border: 2px solid black;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+	text-align: left;
+}
+

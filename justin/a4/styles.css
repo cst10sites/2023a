@@ -1,0 +1,18 @@
+body{
+	background-color: navajowhite;
+	text-align: center;
+	}
+button{
+	padding: 0;
+	border: none;
+	background: none;
+}
+h2 {
+	color:brown;
+	font-family:Cursive;
+	font-size:50px;
+}
+p{
+	color:brown;
+	font-family:Cursive;
+}

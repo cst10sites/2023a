@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<title>Assignment 3</title>
+<style> </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div>
+<h2>Click <a href="index.html">here</a> to go back to the homepage.</h2>
+<h1>HTML Guide</h1>
+<h2>Common HTML Tags</h2>
+<table style="width: 100%;">
+	<tr>
+		<th>Tag</th>
+		<th>Definition</th>
+		<th>Example</th>
+	<tr>
+		<td><b>&lt;!DOCTYPE html></b></td>
+		<td>This instructs the web browser what type of HTML it's in.</td>
+		<td>Click Ctrl-u to see what type of HTML I am using.</td>
+	</tr>
+	<tr>
+		<td><b>&lt;html lang="en"></b></td>
+		<td>This changes the language of the website.</td>
+		<td>This website is in English. Click Ctrl-u to see.</td>
+	</tr>
+	<tr>
+		<td><b>&lt;charset></b></td>
+		<td>This specifies the character encoding.</td>
+		<td>UTF-8 is the one I'm using.</td>
+	</tr>
+	<tr>
+		<td><b>&lt;title></b></td>
+		<td>Whatever you write in this it will become what you read on the tab.</td>
+		<td>This website's title is:<br>Assignment 3.</td>
+	</tr>
+	<tr>
+		<td><b>Internal CSS/&lt;style></b></td>
+		<td>This defines the style for your webpage. This can change: font color, font size, background, margin size and more.</td>
+		<td>I've used this to change my background.</td>
+	</tr>
+	<tr>
+		<td><b>External CSS</b></td>
+		<td>This is a <b>seperate</b> page that is linked in the &lt;head> that can change the same things as Internal CSS,
+		but by putting it in a seperate sheet it can make your code easier to navigate and less cluttered.</td>
+		<td>I've used this to change the &lt;div> color and transparancy.</td>
+	</tr>
+	<tr>
+		<td><b>Favicon/</b></td>
+		<td>This is an icon that you can attatch to the tab next to your &lt;title> like a logo.</td>
+		<td>If you look closely to the tab you can see my Favicon which is a little shooting star.</td>
+	</tr>
+</table>
+</div>
+</body>
+</html>

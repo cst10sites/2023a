@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cookie clicker</title>
+</head>
+<body>
+<h2>Cookie Clicker game </h2>
+ <input onclick="updateCPS();" type="image" src="https://i1.wp.com/www.myidleincome.com/wp-content/uploads/2019/11/Cookie-PNG-Download-Image.png" style="width:20%;">
+<!--button onclick="updateCPS();"><input type="image" src="https://i1.wp.com/www.myidleincome.com/wp-content/uploads/2019/11/Cookie-PNG-Download-Image.png" /></button-->
+<p id="display"><p>
+
+<script>
+var nClicks = 0;
+var startTime = new Date();
+
+function updateCPS() {
+	if (nClicks==0){
+		startTime = new Date();
+
+		nClicks = nClicks + 1
+		document.getElementById('display').innerHTML = nClicks;
+	}
+	else {
+		//note: this part runs when nClicks > 1
+		//1. create variable currentTime
+		//2.create variable timeElapsed and subtract start and currentTime
+		//3.  calculate CPS = nClicks/timeElapsed
+		// BUT timeElapsed be measured in seconds (not millisecond)
+		//4. display CPS using id
+		var currentTime = new Date();
+		var timeElapsed = (currentTime - startTime) / 1000;
+		
+		
+		nClicks = nClicks + 1;
+		document.getElementById('display').innerHTML = timeElapsed;
+		document.getElementById('clickDisplay').innerHTML = nClicks;
+	}
+	}
+</script>
+</body>
+</html>

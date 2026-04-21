@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<title>Assignment 4</title>
+<style> </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div>
+<h1>HTML Guide</h1>
+<h2>Click <a href="head.html">here</a> to go to head.html.</h2>
+<br>
+<ol>
+	<li>This is a sentence.</li>
+	<li>This entire list is a example of an ordered list.</li>
+	<li><div>This is a &lt;div>.</div></li>
+	
+</ol>
+<h2>Common HTML Tags:</h2>
+<table style="width: 100%;">
+	<tr>
+		<th>Tag</th>
+		<th>Definition</th>
+		<th>Example</th>
+	</tr>
+	<tr>
+		<td><b>&lt;h1></b></td>
+		<td>Creates a large heading-<br>goes from largest to smallest font size from h1 to h6.</td>
+		<td>The top heading that says "HTML Guide" is a &lt;h1></td>
+	</tr>
+	<tr>
+		<td><b>&lt;strong></b></td>
+		<td>Makes your text bold and when website is read by computer it will be emphisized.</td>
+		<td>I have an <strong>apple</strong>. In this case the &lt;strong> was applied to "apple"</td>
+	</tr>
+	<tr>
+		<td><b>&lt;br></b></td>
+		<td>Skips to the next line-this is for spacing-out text</td>
+		<td>Apple<br>Apple(there was a space between the two Apples.</td>
+	</tr>
+	<tr>
+		<td><b>&lt;p></b></td>
+		<td>Creates a new paragraph or sentence.</td>
+		<td>See Number 1.</td>
+	</tr>
+	<tr>
+		<td><b>&lt;ol></b></td>
+		<td>Creates a numbered list.</td>
+		<td>See Number 2.</td>
+	</tr>
+	<tr>
+		<td><b>&#38;lt; and &#38;gt;</b></td>
+		<td>This makes the "greater than" and "less than" signs.
+		This can be used to show what a tag looks like on your website <strong>without</strong> making it dissapear into the code.</td>
+		<td>&lt;head> this shows the tag without it just dissapearing into the code and not showing-up on the website</td>
+	</tr>
+	<tr>
+		<td><b>&lt;hr></b></td>
+		<td>This creates a horizontal line across your screen. This can be used to space things out and make your website more asthetically pleasing.</td>
+		<td><hr></td>
+	</tr>
+	<tr>
+		<td><b>&lt;a></b></td>
+		<td>This tag has many purposes one being: making your text link to a new website.</td>
+		<td>Click <a href="https://Youtube.com">here</a> to go to youtube.</td>
+	</tr>
+	<tr>
+		<td><b>&lt;div></b></td>
+		<td>This creates a box around your text that is included inside. It is coded in &lt;body> and can make your website more visually pleasing.</td>
+		<td>See Number 3.</td>
+	</tr>
+	<tr>
+		<td><b>&lt;!-- --></b></td>
+		<td>This creates a comment in your code. It <strong>doesn't</strong> show-up in you website. Where the space is, is where you put your text.</td>
+		<td>Look at code to see.(press ctrl-u)</td><!--Oh no! You found me. :( -->
+	</tr>
+</table>
+</div>
+</body>
+</html>

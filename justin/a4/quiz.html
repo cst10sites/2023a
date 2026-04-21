@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="styles2.css">
+<meta charset="UTF-8">
+<title>HTML quiz</title>
+</head>
+<body>
+<h1>Quiz</h1>
+<form>
+    <label>What does HTML mean?</label><br>
+    <input id="correct1" type="radio" value="Hyper Text Markup Language" name="group">
+    <label>Hyper Text Markup Language</label><br>
+    <input type="radio" value="Home Tool Markup Language" name="group">
+    <label>Home Tool Markup Language</label><br>
+    <input type="radio" value="Hyper something something markup tool" name="group">
+    <label>Hyper something something markup tool</label><br>
+    <input type="radio" value="Hyperlinks and Text Markup language" name="group">
+    <label>Hyperlinks and Text Markup language</label><br>
+	<input type="button" value="Submit" onclick="checkAnswer();"><br> 
+	<input type="reset"><br> 
+</form>
+
+<script>
+	
+function checkAnswer(){
+	var correctAns1 = document.getElementById('correct1').checked;
+	if (correctAns1 == true){
+		alert("Correct! Thats crazy")
+	}
+	else {
+	alert("Oh shucks! try again")
+	}
+}
+
+</script>
+</body>
+</html>

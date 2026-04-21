@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h3>Click <a href="index.html">here</a> to go to the quiz.</h3>
+<h1>Cookie Clicker Contest</h1>
+<br>
+<h2>Click the cookie as fast as you can to see your average clicks per second</h2>
+
+<img src="cookie.jpg" style="width:180px"  onclick="cookies();" ><br>
+<button onclick="reset()">Reset</button>
+<h3>Clicks</h3><p id="display"></p><br>
+<h3>Time:</h3><p id="1"></p><br>
+<h3>Clicks/s</h3><p id="2"></p><br>
+<script>
+var nClicks = 0;
+var startTime = new Date();
+
+function reset() {
+	window.location.reload();
+}
+
+function cookies() {
+	if (nClicks == 0) {
+		startTime = new Date();
+		nClicks++;
+}
+
+	else {
+		var currentTime = new Date();
+		var timeElapsed = currentTime - startTime;
+		var CPS = nClicks / (timeElapsed / 1000);
+		nClicks++;
+		document.getElementById('display').innerHTML = nClicks;
+		document.getElementById('2').innerHTML = CPS;
+}
+}
+	setInterval(updateTime, 100);
+function updateTime() {
+	if (nClicks > 0) {
+	var currentTime = new Date ();
+	var timeElapsed = currentTime -startTime;
+	document.getElementById('1').innerHTML = timeElapsed / 1000;
+	}
+}
+</script>
+
+</body>
+</html>
