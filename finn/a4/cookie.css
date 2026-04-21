@@ -1,0 +1,45 @@
+body {
+	background-color: #AFF0FF;
+	color: black;
+	font-family: calibri;
+	margin: 100px 25px;
+}
+
+table, th, td {
+	border: 2px solid
+}
+
+table {
+	border-collapse: collapse;
+	padding: 50px;
+	background: rgba(150, 150, 150, 0.9);
+	color: white;
+}
+
+th, td {
+	padding: 5px;
+	text-align: left;
+}
+
+h1, h2, p {
+	color: black;
+}
+
+a {
+	color: red;
+}
+
+h3 {
+	color: black;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+body {
+	text-align: center;
+}

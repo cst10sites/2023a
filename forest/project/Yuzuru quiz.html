@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>YUZU ETERNAL</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<h1>Ultimate quiz of decision</h1>
+<div>
+<h3>How many Grand prix final titles did Yuzuru win?</h3>
+<form>
+
+    <input type="radio" value="CSS" name="group">
+    <label>1</label><br>
+    <input type="radio" value="JavaScript" name="group">
+    <label>5</label><br>
+	   <input id="correctLang" type="radio" value="HTML" name="group">
+    <label>4</label><br>
+	<input type="radio" value="JavaScript" name="group">
+    <label>3</label><br>
+	
+    <input type="button" value="Submit" onclick="checkLang();"><br> 
+	
+    <input type="reset"><br> 
+</form>
+<script>
+function checkLang() {
+    var correctAnswer = document.getElementById("correctLang").checked;
+
+    
+    if (correctAnswer == true) {
+        alert("(￣∇￣ﾉﾉ nice! Yuzu would be proud");
+    }
+    else {
+        alert("(╯°□°）╯︵ ┻━┻ you didn't pay attention...");
+    }   
+}
+
+</script>
+
+<hr>
+<img src="YuzuruBye.jpg">
+<a href="Yuzuru's achievements.html"><button type="button">←</button></a>
+</div>
+</body>
+</html>

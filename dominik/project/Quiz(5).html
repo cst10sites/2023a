@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Meditation: The Fix to All Your Problems</title>
+<style></style>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<a class="btn" href="index.html">What It Is</a>
+<a class="btn" href="Why(2).html">Why You Should</a>
+<a class="btn" href="People(3).html">People Who Do</a>
+<a class="btn" href="How(4).html">How To Start</a>
+<br>
+<br>
+<div>
+<h1>Meditation: The Fix to All Your Problems</h1>
+<h2>Knowledge Quiz</h2>
+<h3>Want to see how much you learned about meditation?</h3>
+<form>
+    <label>What are you training during regular meditation?</label>
+    <select id="answerValue1">
+        <option value="i">Your breath</option>
+        <option value="i">Your body</option>
+        <option value="c">Your brain</option>
+        <option value="i">Your heart</option>
+    </select>
+    <br>
+    <input type="button" value="OK" onclick="checkAnswer1();">
+    <input type="reset"><br> 
+</form>
+<form>
+    <label>Which is <span style="color:red">NOT</span> a benefit of meditation?</label>
+    <select id="answerValue2">
+        <option value="c">Decreased awareness</option>
+        <option value="i">Increased focus</option>
+        <option value="i">Decreased stress</option>
+        <option value="i">Better sleep</option>
+    </select>
+    <br>
+    <input type="button" value="Submit" onclick="checkAnswer2();">
+    <input type="reset"><br> 
+</form>
+<form>
+    <label>Which of these celebrities meditates?</label>
+    <select id="answerValue3">
+        <option value="i">Snoop Dog</option>
+        <option value="c">50 Cent</option>
+        <option value="i">Eminem</option>
+        <option value="i">Lil Wayne</option>
+    </select>
+    <br>
+    <input type="button" value="OK" onclick="checkAnswer3();">
+    <input type="reset"><br> 
+</form>
+<form>
+    <label>When is meditation thought to have originated?</label>
+    <select id="answerValue4">
+        <option value="i">1900 AD</option>
+        <option value="i">400 AD</option>
+        <option value="c">5000 BCE</option>
+        <option value="i">300 BCE</option>
+    </select>
+    <br>
+    <input type="button" value="OK" onclick="checkAnswer4();">
+    <input type="reset"><br> 
+</form>
+<h3>Thanks for reading!</h3>
+<script>
+function checkAnswer1() {
+    var chosenAnswer = document.getElementById("answerValue1").value;
+	
+    if (chosenAnswer == "c") {
+		alert("Correct");
+	}
+	else {
+		alert("Incorrect answer");
+	}
+	
+	document.getElementById("answerDisplay").innerHTML = 
+        " " + chosenAnswer;
+
+}
+function checkAnswer2() {
+    var chosenAnswer = document.getElementById("answerValue2").value;
+	
+    if (chosenAnswer == "c") {
+		alert("Correct");
+	}
+	else {
+		alert("Incorrect answer");
+	}
+	
+	document.getElementById("answerDisplay").innerHTML = 
+        " " + chosenAnswer;
+
+}
+function checkAnswer3() {
+    var chosenAnswer = document.getElementById("answerValue3").value;
+	
+    if (chosenAnswer == "c") {
+		alert("Correct");
+	}
+	else {
+		alert("Incorrect answer");
+	}
+	
+	document.getElementById("answerDisplay").innerHTML = 
+        " " + chosenAnswer;
+
+}
+function checkAnswer4() {
+    var chosenAnswer = document.getElementById("answerValue4").value;
+	
+    if (chosenAnswer == "c") {
+		alert("Correct");
+	}
+	else {
+		alert("Incorrect answer");
+	}
+	
+	document.getElementById("answerDisplay").innerHTML = 
+        " " + chosenAnswer;
+
+}
+</script>
+</div>
+</body>
+</html>

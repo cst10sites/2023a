@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HTML Quiz</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<style>
+body {
+	background-color: black;
+	background-image: url("html.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	color: orange;
+	font-family: verdana;
+	margin: 60px 80px;
+}
+
+a {
+	color:yellow;
+}
+
+a:hover {
+	color: red;
+}
+</style>
+<body>
+<h1>HTML Quiz</h1>
+
+<h2>Ashwagandha Clicker</h2>
+<p>Click <a href="cookie.html" target="_blank">here</a> to go to our other game!</p>
+
+<h2>Start of Quiz</h2>
+
+<form>
+    <label>What is the function of the &lt;br&gt; tag?</label><br>
+    <input id="correctLang" type="radio" value="HTML" name="group">
+    <label>Start a new line</label><br>
+    <input type="radio" value="CSS" name="group">
+    <label>Bold text</label><br>
+    <input type="radio" value="JavaScript" name="group">
+    <label>Break an image in half</label><br>
+    <input type="button" value="Submit" onclick="checkLang();"><br> 
+	<input type="reset"><br> 
+</form>
+
+<form>
+    <label>What is the last line in all HTML code?</label>
+    <select id="carValue"><!--no input for dropdown-->
+        <option value="Fiat">&lt;/body&gt;</option>
+        <option value="Saab">&lt;html&gt;</option>
+        <option value="Volvo">&lt;/html&gt;</option>
+        <option value="BMW">&lt;/script&gt;</head></option>
+    </select>
+    <br>
+    <input type="button" value="OK" onclick="checkCar();">
+    <input type="reset"><br> 
+</form>
+
+<script>
+function checkLang() {
+	var correctAnswer = document.getElementById("correctLang").checked;
+	
+	if (correctAnswer == true) {
+		alert("Correct answer");
+	}
+	else {
+		alert("Incorrect answer");
+	}
+	
+}
+
+function checkCar() {
+    var chosenCar = document.getElementById("carValue").value;
+	
+    if (chosenCar == "Volvo") {
+		alert("Correct");
+	}
+	else {
+		alert("Incorrect answer");
+	}
+	
+	document.getElementById("carDisplay").innerHTML = 
+        " " + chosenCar;
+
+}
+</script>
+</body>
+</html>

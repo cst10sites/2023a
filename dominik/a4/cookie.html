@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ashwagandha Clicker</title>
+<link rel="icon" type="image/x-icon" href="cookieicon.ico">
+<style>
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
+body {
+color: blue;
+background-color: orange;
+text-align: center;
+font-family: verdana;
+mix-blend-mode: multiply;
+}
+</style>
+</head>
+<body>
+<h1>Ashwagandha Clicker</h1>
+<p>Click the Ashwagandha and see how strong you get!</p>
+<h2>Capsules per Second:<span id = "display"> </span></h2>
+<h2>Time:<span id ="display2"> </span></h2>
+<input type="image" src="ash.png" alt="Ashwagandha" onclick="updateCPS();">
+<h2>Total Capsules: <span id = "display3"> </span></h2>
+<p style="color:red">Ashwagandha side effects include: abortion, stomach lining irritation, upset stomach, vomiting, and diarrhea.</p>
+<p>Click <a href="index.html" target="_blank">here</a> to go to our other game!</p>
+<script>
+var startTime = new Date();
+var nClicks = 0;
+var currentTime = new Date();
+var timeElapsed = currentTime - startTime;
+function updateCPS() {
+if (nClicks == 0) {
+startTime = new Date();
+nClicks++;
+}
+else {
+var currentTime = new Date();
+var timeElapsed = currentTime - startTime;
+document.getElementById('display2').innerHTML = timeElapsed / 1000;
+var CPS = nClicks / (timeElapsed / 1000);
+document.getElementById('display').innerHTML = CPS;
+nClicks++;
+document.getElementById('display3').innerHTML = nClicks;
+}
+}
+</script>
+</body>
+</html>

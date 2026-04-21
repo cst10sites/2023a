@@ -1,0 +1,45 @@
+body {
+	background-color: bisque;
+	color: maroon;
+	margin: 20px 100px;
+	font-family: helvetica;
+}
+	
+a.btn {
+	background-color: sandybrown;
+	padding: 10px 20px;
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 25px;
+	border-style: solid;
+	border-color: tomato;
+}
+
+a.btn:hover {
+	background-color: sienna;
+}
+
+a {
+	color: maroon;
+}
+
+div {
+	padding: 50px;
+	background: rgba(244,164,96);
+}
+
+h1 {
+	color: white;
+}
+
+p {
+	font-size: 1.2em;
+}
+
+li {
+	font-size: 1.2em;
+}
+
+img.rounded-corners {
+  border-radius: 30px;
+}

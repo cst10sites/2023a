@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Quiz</title>
+<link rel="stylesheet" href="quiz.css">
+<style></style>
+<link rel="icon" type="image/x-icon" href="favicon2.ico">
+</head>
+<body>
+<div>
+<h1>Quiz</h1>
+<h3>Awnser the question and find out if you got them right</h3>
+<form>
+    <label>What coding language let this quiz happen</label><br>
+    <input id="correctLang" type="radio" value="The Right Anwser" name="group">
+    <label>Javascript</label><br>
+    <input type="radio" value="no" name="group">
+    <label>HTML</label><br>
+    <input type="radio" value="NO" name="group">
+    <label>CSS</label><br>
+    <input type="button" value="Check" onclick="good();"><br> 
+    <input type="reset"><br> 
+</form>
+<p id="1"></p>
+
+<form>
+    <label>Which of the following are actual coding languages</label><br>
+    <input id="choice1" type="checkbox" value="HTML">
+    <label>HTML</label>
+    <input id="choice2" type="checkbox" value="Javascript">
+    <label>Javascript</label><br>
+    <input id="choice3" type="checkbox" value="CSS">
+    <label>CSS</label>
+    <input id="choice4" type="checkbox" value="shouldBeALanguage">
+    <label>totally real coding language</label><br>
+    <input type="button" value="Check" onclick="More();"><br> 
+    <input type="reset"><br> 
+</form>
+<p id="2"></p>
+
+<br>
+<br>
+<br>
+<p>click <a href="cookie.html">here</a> to go to cookie clicker</p>
+</div>
+<script>
+function good() {
+    var correctAnswer = document.getElementById("correctLang").checked;
+    // alert(correctAnswer); true or false
+    
+    if (correctAnswer == true) {
+        document.getElementById('1').innerHTML = 'correct';
+    }
+    else {
+        document.getElementById('1').innerHTML = 'incorrect';
+    }
+}
+
+function More() {
+    var choice1 = document.getElementById("choice1").checked;
+    var choice2 = document.getElementById("choice2").checked;
+    var choice3 = document.getElementById("choice3").checked;
+    var choice4 = document.getElementById("choice4").checked;
+    
+    if (choice1 == true && choice2 == true && choice3 == true && choice4 == false) {
+        document.getElementById('2').innerHTML= 'correct';
+    }
+	else {
+		document.getElementById('2').innerHTML= 'incorrect';
+	}
+}
+</script>
+
+
+</body>
+</html>

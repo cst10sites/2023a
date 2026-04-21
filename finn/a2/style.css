@@ -1,0 +1,14 @@
+body {
+	background-color: #E5E7E9;
+	color: black;
+	margin: 50px 100px;
+	font-family: Calibri;
+}
+
+
+div {
+	padding: 20px;
+	background: rgba(190, 190, 190, 0.9);
+	/*rgba(red, green, blue, alpha/opasity*/
+	color: black;
+}

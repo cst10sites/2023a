@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<h1>Ultimate quiz of decision</h1>
+<div>
+<h2>Which one is the valid html tag?</h2>
+<form>
+    <input id="correctLang" type="radio" value="HTML" name="group">
+    <label>&lt;meta charset="UTF-8"&gt;</label><br>
+    <input type="radio" value="CSS" name="group">
+    <label>&lt;function&gt;</label><br>
+    <input type="radio" value="JavaScript" name="group">
+    <label>&lt;html5&gt;</label><br>
+	<input type="radio" value="JavaScript" name="group">
+    <label>&lt;desk&gt;</label><br>
+	
+    <input type="button" value="Submit" onclick="checkLang();"><br> 
+	
+    <input type="reset"><br> 
+</form>
+<script>
+function checkLang() {
+    var correctAnswer = document.getElementById("correctLang").checked;
+
+    
+    if (correctAnswer == true) {
+        alert("(￣∇￣ﾉﾉ nice!");
+    }
+    else {
+        alert("(╯°□°）╯︵ ┻━┻ sad...");
+    }   
+}
+
+</script>
+<p><img src="image.png" alt=""></p>
+<p><strong>If you like really lame games that waste your time but are fun, go <a href="index.html">here </a>:P</strong></p>
+</div>
+</body>
+</html>

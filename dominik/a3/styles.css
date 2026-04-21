@@ -1,0 +1,37 @@
+body {
+	background-color: black;
+	background-image: url("html.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	color: orange;
+	font-family: verdana;
+	margin: 50px 100px;
+}
+
+div {
+	padding: 50px;
+	background: rgba(70, 90, 130, 0.8);
+	color: orange;
+}
+
+a {
+	color:yellow;
+}
+
+a:hover {
+	color: red;
+}
+
+table, th, td {
+	border: 2px solid white;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+	text-align: center;
+}

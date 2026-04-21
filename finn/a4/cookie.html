@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="stylesheet" href="cookie.css">
+<style></style>
+<link rel="icon" type="image/x-icon" href="favicon1.ico">
+</head>
+<body>
+<h2>Cookie Clicker</h2>
+<input style="width:30%;" type="image" src="https://www.freeiconspng.com/thumbs/cookie/cookie-png-transparent-images-background-23.png" onclick="cookies();" class="center">
+<br>
+<button onclick="reset()">reset</button>
+<h3>clicks</h3>
+<p id="display"></p><br>
+<h3>time elapsed</h3>
+<p id="1"></p>
+<h3>CPS</h3>
+<p id="2"></p>
+<script>
+
+var nClicks = 0;
+var startTime = new Date();
+
+function reset() {
+	window.location.reload();
+}
+
+function cookies() {
+	if (nClicks == 0) {
+		startTime = new Date();
+		nClicks++;
+	}
+	
+	else {
+		var currentTime = new Date();
+		var timeElapsed = currentTime - startTime;
+		var CPS = nClicks / (timeElapsed / 1000);
+		nClicks++;
+		document.getElementById('display').innerHTML = nClicks;
+		document.getElementById('2').innerHTML = CPS;
+}
+
+setInterval(updateTime, 100);
+function updateTime() {
+	if (nClicks > 0) {
+		var currentTime = new Date ();
+		var timeElapsed = currentTime -startTime;
+		document.getElementById('1').innerHTML = timeElapsed / 1000;
+	}
+}
+}
+</script>
+</body>
+</html> 
