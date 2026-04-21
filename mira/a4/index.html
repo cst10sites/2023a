@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/x-icon" href="favicon-16x16.png">
+</head>
+<body>
+
+
+<h1>Assignment 4</h1>
+<p><a href="cookie.html">Cookie Clicker</a> </p>
+<h2>Coding Language Quiz</h2>
+<div>
+
+<form>
+<label>What language do you use to change the colour of your website?</label><br>
+<input type="radio" value="HTML" name="group">
+<label>HTML</label><br>
+<input type="radio" id="correctLang" value="CSS" name="group">
+<label>CSS</label><br>
+<input type="radio"  value="JavaScript" name="group">
+<label>JavaScript</label><br>
+<input type="button" value="Submit" onclick="checkLang()">
+<input type="reset">
+
+</form>
+
+<form>
+<label>What are the correct tag(s) for a header?</label><br>
+<input type="checkbox" value="h1" id="correctAns1">
+<label>&lt;h1&gt;</label><br>
+<input type="checkbox" value="1h" id="incorrectAns1" >
+<label>&lt;1h&gt;</label><br>
+<input type="checkbox" value="header" id="incorrectAns2">
+<label>&lt;header&gt;</label><br>
+<input type="checkbox" value="h2" id="correctAns2">
+<label>&lt;h2&gt;</label><br>
+<input type="button" value="submit" onclick="checkHeader()">
+<input type="reset">
+</form>
+
+
+<label></label>
+
+</div>
+
+
+<script>
+
+function checkLang() {
+	
+	var correctAnswer = document.getElementById("correctLang").checked;
+	
+	// alert(correctAnswer);
+
+	if (correctAnswer == true) {
+		alert("Good Job!");
+		
+	}
+	 else {
+		alert("uh oh!");
+	}
+	
+}
+
+function checkHeader() {
+	var correctAns1 = document.getElementById("correctAns1").checked;
+	var correctAns2 = document.getElementById("correctAns2").checked;
+	var incorrectAns1 = document.getElementById("incorrectAns1").checked;
+	var incorrectAns2 = document.getElementById("incorrectAns2").checked;
+	
+	if(correctAns1 == true && correctAns2 == true && incorrectAns1 == false && incorrectAns2 == false) {
+		alert("Good Job!");
+	
+	}
+	
+	else {
+		alert("nope!");
+	}
+	
+
+}
+
+</script>
+</body>
+</html>

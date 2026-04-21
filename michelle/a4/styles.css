@@ -1,0 +1,33 @@
+/* graphic design is my passion~ :) */
+
+body {
+	background-color: #d5eded;
+	color: LightCoral;
+	font-family: arial;
+	margin: 200px 150px;
+}
+
+div {
+	padding: 30px;
+	text-align: center;
+	border-color: LightCoral;
+	border-width: medium;
+	border-style: solid;
+	background-color: #fcf5f5; 
+}
+
+ .button {
+  	background-color: LightCoral;
+	color: white;
+	padding: 15px 25px;
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 12px
+	border-style: solid; 
+	border-color: #e6b5b5;
+	font-size: 1.2em;
+}
+
+a {
+	color: darkcyan;
+}

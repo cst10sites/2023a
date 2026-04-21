@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<div>
+<h1>CSS Clicker Game</h1>
+<h4>By Michelle X - CST 10</h4>
+
+<h3>Click the CSS files to play!</h3>
+<p>Note: The higher your CSS Clicks Per Second, the higher your chance of passing Mr. Kam's class is. <br>
+<p><strong>Good luck!<strong></p>
+<input style="width:150px;" type="image" src="css.png" onclick="updateCPS();" class="center">
+
+<br>
+
+<!-- uh oh, guess who doesn't know what they're doingggg -->
+<h3>Time Elapsed: </h3><h3 id="timeElapsed"></h3>
+<h3>Total CSS Clicks: </h3><h3 id="display"></h3>
+<h3>CSS Clicks per second: </h3><h3 id="CPS"></h3>
+<button class="button" onclick="resetWatch();">Restart</button>
+<br>
+<p></p>
+
+<p>Listen to some great music while you're at it:</p>
+<audio controls>
+  <source src="verygoodmusic.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
+<p>Are quizzes more of your thing? Then click <a href="head/index.html">here</a>!</p>
+<script src="script.js"></script>
+</div>
+</body>
+</html>

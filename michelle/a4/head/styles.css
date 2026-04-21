@@ -1,0 +1,19 @@
+body {
+	background-color: #d5eded;
+	color: LightCoral;
+	font-family: arial;
+	margin: 200px 150px;
+}
+
+div {
+	padding: 30px;
+	text-align: center;
+	border-color: LightCoral;
+	border-width: medium;
+	border-style: solid;
+	background-color: #fcf5f5; 
+}
+
+a {
+	color: darkcyan;
+}

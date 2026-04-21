@@ -1,0 +1,27 @@
+body {
+	background-color: mistyrose;
+	text-align: center;
+	margin: 50px;
+	font-family: arial;
+	
+}
+
+h2 {
+	text-align: center;
+	
+	
+}
+
+
+
+div {
+	padding: 20px;
+	background: lightpink;
+	border-color: lightcoral;
+	border-width: thick;
+	border-style: double;
+	text-align: left;
+	
+	
+	
+}

@@ -1,0 +1,44 @@
+body {
+	background-color: white;
+	color: slategrey;
+	font-family: georgia;
+	margin: 25px 25px;
+}
+
+h1 {
+	color: black;
+	font-family: monaco;
+}
+div {
+	padding: 25px;
+	background: rgba(3, 5, 4, 0.1);
+}
+
+a.btn {
+	background-color: lavenderblush;
+	padding: 15px 25px;
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 25px;
+	border-style: solid;
+	border-color: slategrey;
+}
+
+
+table, th, td {
+	border: 2px solid black;	
+	border-collapse: collapse;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+	text-align: left; 
+}
+
+th{
+	background-color: lavenderblush;
+}

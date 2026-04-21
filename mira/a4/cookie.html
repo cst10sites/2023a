@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="icon" type="image/x-icon" href="apple-touch-icon.png">
+
+
+<style>
+body {
+	background-color: tan;
+	color: white;
+	text-align: center;
+	font-family: arial;
+	margin:50px;
+}
+
+div {
+	border-style: solid;
+	
+}
+
+</style>
+</head>
+<body>
+<h1>Assignment 4</h1>
+
+<p><a href="index.html">Coding Language Quiz</a></p>
+<div>
+<h2>Cookie Clicker</h2>
+
+
+<input alt="cookie image" type="image" width="200" src="cookie.png" onclick = "updateCPS()">
+<p>Clicks</p>
+<p id="display"></p>
+<p>clicks per second</p>
+<p id="displayTime"></p>
+
+
+</div>
+
+<script>
+
+var startTime = new Date();
+var nClicks = 0;
+
+function updateCPS() {
+	
+	
+	if (nClicks == 0) {
+		startTime = new Date();
+		nClicks = nClicks + 1;
+		document.getElementById('display').innerHTML = nClicks;
+		
+	}
+	else {
+	var currentTime = new Date ();
+	var timeElapsed = (currentTime - startTime)/1000;
+	
+	
+	nClicks = nClicks + 1;
+	document.getElementById('display').innerHTML = nClicks;
+	document.getElementById('displayTime').innerHTML = nClicks/timeElapsed;
+	}
+}
+
+
+</script>
+</body>
+</html>

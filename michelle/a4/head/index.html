@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4-B</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div>
+<h1>A Super Fun Quiz!</h1>
+<form>
+    <label>Which of the following is <em>NOT</em> an inline HTML element?</label><br>
+    <input type="radio" value="samp" name="group">
+    <label>&lt;samp&gt;</label><br>
+	
+	<input type="radio" id="checkIt" value="figure" name="group">
+    <label>&lt;figure&gt;</label><br> <!-- This one's a block-level element -->
+	
+	<input type="radio" value="dfn" name="group">
+    <label>&lt;dfn&gt;</label><br>
+	
+    <input type="radio" value="small" name="group">
+    <label>&lt;small&gt;</label><br>
+	
+    <input type="radio" value="input" name="group">
+    <label>&lt;input&gt;</label><br>
+	
+	<br>
+	
+	<input type="button" value="Submit" onclick="correctAnswer();"><p></p><input type="reset"><br> 
+</form>
+
+<script>
+function correctAnswer() {
+	var checkIt = document.getElementById("checkIt").checked;
+	// alert(correctAnswer);
+
+	if (checkIt == true) {
+		alert("That's correct! <figure> is a block-level element.");
+	}
+
+	else {
+		alert("Try again.");
+		}
+}
+
+</script>
+</div>
+</body>
+</html>
