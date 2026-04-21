@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+	<title>Quiz</title>
+	<style></style>
+	<link rel="stylesheet" href="style.CSS">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<div class="subbanner">
+<div class="subcontent">
+
+<h1>QUIZ</h1>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+	<div class="subnavbar">
+
+	<form>
+    <label>Which exercise is the best for the <em><strong>back</strong></em> muscle?</label><br>
+    <input type="radio" value="pushup" name="group">
+    <label>v push up</label><br>
+    <input type="radio" value="handstands" name="group">
+    <label>Handstands</label><br>
+    <input id="correct1" type="radio" value="pull ups" name="group">
+    <label>pull ups</label><br>
+    <input type="radio" value="push ups" name="group">
+    <label>push ups</label><br>
+	
+    <input type="button" value="Suess" onclick="back();">
+	<input type="reset" value="Reset">
+</form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div>
+<button type="button" onclick="location.href='index.html'"><span></span>BACK TO HOME PAGE</button>
+
+</div>
+<script>
+function back() {
+	var correctAnswer = document.getElementById("correct1").checked;
+	if (correctAnswer == true) {
+		alert("It's Correct!");
+	}
+	else {
+		alert("WRONG!");
+	}
+}
+</script>
+</body>
+</html>

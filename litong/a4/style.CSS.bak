@@ -1,0 +1,12 @@
+h2{
+	color:#d7bde2;
+}
+body{
+	background-color:#76448a;
+	font-family: "Trebuchet Ms";
+	margin: 25px 125px;	
+	color: white;
+}
+label{
+	color:#d7bde2;
+}

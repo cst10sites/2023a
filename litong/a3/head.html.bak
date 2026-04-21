@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Head</title>
+<style></style>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="dizzy.ico">
+<body>
+<h1>HTML Guide</h1>
+<h2>Common HTML Tags outside &ltbody&gt</h2>
+<p>Click <a href="index.html">here</a> to go to body.</p>
+<table style="width:100%;">
+	<tr><!--table rox-->
+	<th style="width:40%;">Tag</th><!--table header-->
+	<th	style="width:30%";>Definition</th>
+	<th	style="width:30%";	>Examples</th>
+	</tr>
+	
+	<tr>
+	<td>&lt!DOCTYPE html&gt</td><!--table data-->
+	<td>tells the browser what version of HTML the document is written in</td>
+	<td></td>
+	</tr>
+	<tr>
+	<td>&lthtml lang="en"&gt</td><!--table data-->
+	<td>Language attribute </td>
+	<td>Used to identify the language of text content on the web.</td>
+	</tr>
+	<tr>
+	<td>Charset</td><!--table data-->
+	<td>The character encoding for</td>
+	<td><img alt="" style="width:100%;" src="0_VnIOyiyI-t2cCRzj.png"></td>
+	</tr>
+	
+	<tr>
+	<td>Title</td><!--table data-->
+	<td>Defines the document's title that is shown in a browser's title bar or a page's tab</td>
+	<td><img alt="" style="width:50%"	src="screenshot.png"></td>
+	</tr>
+	<tr>
+	<td>Internal CSS</td><!--table data-->
+	<td>Used to define a style for a single HTML page</td>
+	<td>body{
+	background-color: black;
+	color: #FFF8DC;
+	margin: 100px 50px;
+	font-family: Roman;}
+	<br><br>
+	h1{
+	font-size: 5em;}<br><br>
+	h2{
+	color:yellow;}
+	</td>
+	</tr>
+	<tr>
+	<td>External CSS</td><!--table data-->
+	<td>A separate CSS file that can be accessed by creating a link within the head section of the webpage.</td>
+	<td><img alt="" style="width:100%"	src="screenshot1.png"></td>
+	</tr>
+	<tr>
+	<td>Favicon</td><!--table data-->
+	<td>A graphic image (icon) associated with a particular Web page and/or Web site.</td>
+	<td><img alt="" style="width:100%"	src="screenshot3.png"></td>
+	</tr>
+	
+<body>
+</head>

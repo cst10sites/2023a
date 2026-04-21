@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta charset="UTF-8"> 
+	<title>HOME WORKOUT TUTORIAL</title>
+	<link rel="stylesheet" href="style.CSS">
+	<link rel="icon" type="image/x-icon" href="favicon.ico"> 
+</head>
+<body>
+	<div class="banner">
+		<div class="navbar">
+			<ul>
+				<li><a href="chest.html">CHEST</a></li>
+				<li><a href="back.html">BACK MUSCLE</a></li>
+				<li><a href="shoulder&arm.html">SHOULDER & ARM & CORE/ABS</a></li>
+				<li><a href="quiz.html">QUZI</a></li>
+			</ul>	
+			<img src="mucle.png" class="logo">				
+		</div>
+		<div class="content">
+			<h1>LITONG'S HOME WORKOUTS TUTORIAL</h1>
+			<p>This website is about Litong's home workout tutorial</p>
+			<div>
+				<button type="button" onclick="location.href='https://www.instagram.com/libobhus/'"><span></span>Instagram</button>
+				<button type="button" onclick="location.href='https://www.tiktok.com/@litonghu0?is_from_webapp=1&sender_device=pc'"><span></span>Tiktok</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>	

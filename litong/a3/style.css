@@ -1,0 +1,60 @@
+body {
+	background-color: black;
+	background-image: url("360_F_310168822_FtoXtGb1YRdzOpaC1EDIryRgqQM4noyt.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%; 
+	background-attachment: fixed;	
+	color: #F7DC6F;
+	font-family: Courier;
+	margin: 100px 25px;
+
+}
+h1{
+	-webkit-text-stroke: 2px black;
+	
+}
+h2{
+	-webkit-text-stroke: 1px black;
+	
+}
+
+div{
+	padding: 50px;
+	background-color: #F7DC6F
+	color: #F7DC6F;
+	
+}
+a{
+	color:	#D4AC0D;
+	
+	
+}
+a:hover{
+	color:white;
+
+
+}
+
+
+table,th,td{
+	border: 2px	solid White;
+	color: #F7DC6F;
+	
+	
+	
+}	
+
+
+table{
+	border-collapse: Aqua;
+	
+	
+th,td{
+	padding:5px;
+	text-align: left;
+}
+	
+	
+	
+	
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Quiz</title>
+<link rel="stylesheet" type="text/css" href="style.CSS">
+</head>
+<body>
+
+
+<form>
+    <h2>What does HTML stand for?</h2><br>
+	<input type="radio" value="HTML" name="group">
+    <label>Hightext Markup Language</label><br>
+    <input type="radio" value="HTML" name="group">
+    <label>Home Tool Markup Language</label><br>
+    <input id="correctLang" type="radio" value="CSS" name="group">
+    <label>Hypertext Markup Language</label><br>
+    <input type="radio" value="JavaScript" name="group">
+    <label>Hypertext Markup Coding</label><br>
+    <input type="button" value="Submit" onclick="checkLang();"><br> 
+	<input type="reset"><br> 
+</form>
+<form>
+    <h2>Which ones are not the correct HTML element for inserting a line break?</h2><br>
+    <input id="correct2" type="checkbox" value="break">
+    <label>&ltbreak&gt</label>
+    <input id="correct3"type="checkbox" value="b">
+    <label>&ltb&gt</label><br>
+    <input id="correct0"type="checkbox" value="br">
+    <label>&ltbr&gt</label>
+    <input id="correct1"type="checkbox" value="linebreak">
+    <label>&ltlinebreak&gt</label><br>
+    <input type="button" value="sumbit" onclick="button();">
+	<input type="reset"><br> 
+</form>
+<h3>Click <a target="_blank" href="head.html">here</a> go to cookie clicker.</h3>
+<script>
+function checkLang() {
+	var correctAnswer = document.getElementById("correctLang").checked;
+	// alert(correctAnswer); true or false
+	
+	if (correctAnswer == true) {
+		alert("correct!");
+	}
+	else {
+		alert("WRONG!");
+	}
+	
+}
+function button() {
+	// Pop-up "Easter egg" when eggs and pork are selected.
+	var correctAns1 = document.getElementById("correct1").checked;
+	var correctAns3 = document.getElementById("correct2").checked;
+	var correctAns2 = document.getElementById("correct3").checked;
+	var incorrectAns = document.getElementById("correct0").checked;
+	if (correctAns1 == true && correctAns2 == true && correctAns3 == true && incorrectAns == false) {
+		alert("CORRECT!");
+	}
+	else {
+		alert("WRONG!");
+	}
+	
+	// Note: This will still pop-up when other "incorrect" answers are selected;
+	//       therefore, still need to modify this code.
+
+}
+
+
+
+</script>
+</body>
+</html>
+
+
+
+

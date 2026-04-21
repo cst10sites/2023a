@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quiz</title>
+	<style>
+		h1 {
+			display: flex;
+			justify-content: center;
+		}
+		div {
+  			margin: 50px;
+  			padding: 10px;
+  			outline: solid 4px blue;
+  			display: flex;
+  			justify-content: center;
+  			background-color:  lightblue;
+  			font-family: Helvetica;
+  			color: black;
+		}
+	</style>
+</head>
+<body>
+	<h1>Quiz</h1>
+	<a href="cookie.html">Link To Cookie</a>
+	<div>
+	<form>
+		<label>What does HTML stand for</label><br>
+		<input type="radio" name="HTML">
+		<label>Hyper Time Machine Lift</label><br>
+		<input type="radio" name="HTML" id="correct0">
+		<label>Hyper Text Markup Language</label><br>
+		<input type="radio" name="HTML">
+		<label>Hot Text Maniscript Learner</label><br>
+		<input type="radio" name="HTML">
+		<label>Half Time Machine Lame</label><br><br>
+		<label>How do you make a Paragraph</label><br>
+		<input type="radio" name="p">
+		<label>\p/ \p/</label><br>
+		<input type="radio" name="p" id="correct1">
+		<label>&#x3c;&#x70;&#x3e;&#x3c;&#x2f;&#x70;&#x3e;</label><br>
+		<input type="radio" name="p">
+		<label>&#x3c;&#x2f;&#x70;&#x3e;&#x3c;&#x70;&#x3e;</label><br>
+		<input type="radio" name="p">
+		<label>&#x70;&#x3e;&#x20;&#x3c;&#x70;&#x2f;&#x3e;</label><br><br>
+		<label>How do you declare a variable in javascript</label><br>
+		<input type="radio" name="var"  id="correct2">
+		<label>var x = 1;</label><br>
+		<input type="radio" name="var">
+		<label>x = 1;</label><br>
+		<input type="radio" name="var">
+		<label>variable x = 1;</label><br>
+		<input type="radio" name="var">
+		<label>variable x;</label><br><br>
+		<label>How do you write an if statement</label><br>
+		<input type="radio" name="if">
+		<label>if {true} (   )</label><br>
+		<input type="radio" name="if">
+		<label>if true: </label><br>
+		<input type="radio" name="if"  id="correct3">
+		<label>if (true) {  }</label><br>
+		<input type="radio" name="if">
+		<label>if true {   }</label><br><br>
+		<label>What tag do you use to use javascript</label><br>
+		<input type="radio" name="java"  id="correct4">
+		<label>script</label><br>
+		<input type="radio" name="java">
+		<label>javascript</label><br>
+		<input type="radio" name="java">
+		<label>java</label><br>
+		<input type="radio" name="java">
+		<label>scriptjava</label><br><br>
+		<label>What language is for changing the style and format of website</label><br>
+		<input type="radio" name="css">
+		<label>HTML</label><br>
+		<input type="radio" name="css">
+		<label>javascript</label><br>
+		<input type="radio" name="css" id="correct5">
+		<label>CSS</label><br>
+		<input type="radio" name="css" >
+		<label>Java</label><br><br>
+		<br><br><input type="button" value="Submit" onclick="calculate()">
+	</form>
+	</div>
+	<p id="score"></p>
+</body>
+
+<script type="text/javascript">
+
+
+function calculate() {
+	var question = [];
+	for (var i = 0; i < 6; i++){
+			question[i] = Number(document.getElementById("correct" + i).checked);
+		}
+	var average = question.reduce((a, b) => a + b, 0) / question.length;
+	average = Math.round(average * 100)
+	document.getElementById("score").innerHTML = average
+}
+
+</script>
+</html>

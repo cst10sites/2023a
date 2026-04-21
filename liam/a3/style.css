@@ -1,0 +1,23 @@
+    table,
+    th,
+    td {
+        border: 2px solid black;
+        border-collapse: collapse;
+        padding: 15px;
+
+    }
+    td {
+        font-size: 25px;
+        font-family: Helvetica;
+    }
+    p,h1,h2,a{
+        font-family: Helvetica;
+    }
+
+body {
+    margin: 25px;
+    background-color: lightblue;
+}
+div{
+    background-color: blue;
+}

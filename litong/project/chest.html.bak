@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+	<title>Chest Workout</title>
+	<style></style>
+	<link rel="stylesheet" href="style.CSS">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<div class="subbanner">
+<div class="subcontent">
+
+<h1>CHEST WORKOUTS</h1>
+</div>
+<br>
+<br>
+<br>
+<br>	
+<br>
+	<div class="subnavbar">
+	<h2>Push ups</h2>
+	<img src="pushup.jpg">
+	<ol>
+		<li>Get down on the floor, placing your hands slightly wider than your shoulders.</li>
+		<li>Straighten your arms and legs.Tighten your core muscle.</li>
+		<li>Lean forward,put pressure on to chest muscle.</li>
+		<li>Lower your body until your chest nearly touches the floor.</li>
+		<li>Pause, then push yourself back up.</li>
+	</ol>
+	</div>
+	<div class="subnavbar">
+	<h2>Dimon Push ups</h2>
+	<img src="5527f84d52d127792748796528154b65.jpg">
+	<ol>
+		<li>Get down on the floor with your hands together under your chest.</li>
+		<li>Position your index fingers and thumbs so they’re touching, forming a diamond shape.</li>
+		<li>Straighten your arms and legs.Tighten your core muscle.</li>
+		<li>Lower your body until your chest nearly touches the floor.</li>
+		<li>Pause, then push yourself back up.</li>
+	</ol>
+	</div>
+	<div class="subnavbar">
+	<h2>Dips</h2>
+	<img src="dips.jpg">
+	<ol>
+		<li>Get into position with a bench behind you.</li>
+		<li>Tighten your core and lower your body off the bench. </li>
+		<li>Keep your head and upper body straig.</li>
+		<li>Hold the dipped position for 1-2 seconds before pushing back up. </li>
+		<li>Move yourself up and down without returning to the bench. </li>
+	</ol>
+	
+</div>
+<div>
+<button type="button" onclick="location.href='index.html'"><span></span>BACK TO HOME PAGE</button>
+</div>
+</div>
+</body>
+</html>

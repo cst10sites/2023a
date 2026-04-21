@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+	<title>Shoulder & Arm Workout & CORE/ABS</title>
+	<style></style>
+	<link rel="stylesheet" href="style.CSS">	
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<div class="subbanner">
+<div class="subcontent">
+
+<h1>Shoulder & arm & Abs</h1>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+	<div class="subnavbar">
+	<h2>V Push ups</h2>
+	<img style="width:205px;"src="Vpushups.jpg">
+	<ol>
+		<li>Get down on the floor, start with pushup position.</li>
+		<li>Bend your butt to 130°.</li>
+		<li>Use your shoulder muscle get down and up.</li>
+		<li>Try to hold your core muscle and put pressure on your shoulder</li>
+	</ol>
+	</div>
+	<div class="subnavbar">
+	<h2>Chin Ups</h2>
+	<img style="width:205px;"src="chinup.jpg">
+	<ol>
+		<li>Hold your hand on the bar.</li>
+		<li>Use your biceps to pull you up over your chin.</li>
+	</ol>
+	</div>
+	<div class="subnavbar">
+	<h2>Dips</h2>
+	<img style="width:205px;"src="dips.jpg">
+	<ol>
+		<li>Get into position with a bench behind you.</li>
+		<li>Tighten your core and lower your body off the bench. </li>
+		<li>Keep your head and upper body straig.</li>
+		<li>Move yourself up and down without returning to the bench. </li>
+	</ol>
+	</div>
+	<div class="subnavbar">
+	<h2>Plank</h2>
+	<img style="width:205px;"src="plank.jpg">
+	<ol>
+		<li>Get down on the floor, hands flat on the floor.</li>
+		<li>Tight your core muscle</li>
+		<li>Keeping your forearms and knees on the floor slowly raise yourself upwards until your body is in a straight line from your knees to your head.</li>
+		<li>Hold the position for as long as you can.</li>
+	</ol>
+	</div>
+	<div class="subnavbar">
+	<h2>Bar Knee Raise</h2>
+	<img style="width:205px;"src="knee.jpg">
+	<ol>
+		<li>Get down on the floor, placing your hands slightly wider than your shoulders.</li>
+		<li>Straighten your arms and legs.Tighten your core muscle.</li>
+		<li>Lean forward,put pressure on to chest muscle.</li>
+		<li>Lower your body until your chest nearly touches the floor.</li>
+		<li>Pause, then push yourself back up.</li>
+	</ol>
+	</div>
+	<div>
+	<button type="button" onclick="location.href='index.html'"><span></span>BACK TO HOME PAGE</button>
+	</body>
+	</html>
