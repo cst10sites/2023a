@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+	body {
+		font-family: Comic Sans MS;
+		}
+	
+</style>
+<title>Assignment 4</title>
+</head>
+<body>
+<h1>Quiz</h1>
+<form>
+    <label>Which coding language decides the appearance of a website?</label><br>
+    <input type="radio" value="HTML" name="group">
+    <label>HTML</label><br>
+    <input id="correctLang" type="radio" value="CSS" name="group">
+    <label>CSS</label><br>
+    <input type="radio" value="JavaScript" name="group">
+    <label>JavaScript</label><br>
+	<input type="button" value="submit" onclick="checkLang();"><br>
+    <input type="reset"><br> 
+</form>
+<a href="cookie.html">Cookie Clicker</a>
+
+<script>
+function checkLang() {
+	var correctAnswer = document.getElementById("correctLang").checked;
+	
+	alert(correctAnswer);
+	
+	if (correctAnswer == true) {
+		alert("Correct");
+	}
+	else {
+		alert("Try again");
+	}
+}
+</script>
+</body>
+</html>

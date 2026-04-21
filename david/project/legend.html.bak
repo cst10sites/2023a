@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="favicon.png">
+<head>
+<title>Legends</title>
+<style></style>
+<link rel="stylesheet" href="Stylesheet3.css">
+</head>
+<body>
+<div class="container">
+<h1>Legends</h1>
+<table>
+  <tr>
+    <th>Legend</th>
+    <th>League wins</th>
+	<th>UCL wins</th>
+	<th>World cup wins</th>
+	<th>Ballon d'ors</th>
+	<th>Other achievemnts</th>
+  </tr>
+  <tr>
+    <td>Pele</td>
+    <td>6</td>
+	<td>0</td>
+	<td>3</td>
+	<td>N/A</td>
+	<td>World Player of the Century</td>
+  </tr>
+  <tr>
+    <td>Maradona</td>
+    <td>3</td>
+    <td>1</td>
+	<td>1</td>
+	<td>0</td>
+	<td>N/A</td>
+  </tr>
+  <tr>
+  <td>Crisiano Ronaldo</td>
+  <td>6</td>
+  <td>5</td>
+  <td>0</td>
+  <td>5</td>
+  <td>2016 Euro's winner, 4x Club World Cup winner</td>
+  </tr>
+  <tr>
+  <td>Lionel Messi</td>
+  <td>9</td>
+  <td>4</td>
+  <td>1</td>
+  <td>7</td>
+  <td>2020/2021 Copa América winner</td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

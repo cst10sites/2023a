@@ -1,0 +1,30 @@
+body {
+	background-color: black;
+	font-family: courier;
+	color: lime;
+}
+
+table, th, td {
+	border: 2px lime solid; 
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th,td {
+	padding: 5px;
+	text-align: left;
+}
+
+th {
+	font-size: 20px;
+}
+
+a {
+	color:cyan;
+}
+
+a:hover { 
+	color: red;
+}

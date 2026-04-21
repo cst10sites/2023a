@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="favicon.png">
+<head>
+<title>Rules</title>
+<style></style>
+<link rel="stylesheet" href="Stylesheet2.css">
+</head>
+<body>
+<div class="container">
+<h1>Rules</h1>
+<ul>
+	<li>All players must use their feet head or chest to play the ball. Only the goalkeeper is allowed to use their hands, and only within their designated goal area.</li>
+	<li>The aim of the game is to score a goal, which is achieved by kicking or heading the ball into the opposition team's goal.</li>
+<li>Cards</li>
+<li style="list-style-type:circle;">A player receives a yellow card if they commit any of these fol	lowing offences.</li>
+	<ul class="yellow"><li>is guilty of unsporting behavior</li>
+	<li>shows dissent by word or action</li>
+	<li>persistently infringes the Laws of the Game</li>
+	<li>delays the restart of play</li>
+	<li>fails to respect the required distance when play is restarted with a corner-kick, free-kick, or throw in</li>
+	<li>enters or re-enters the field of play without the referee's permission</li>
+	<li>deliberately leaves the field of play without the referee's permission</li>
+	</ul>
+<li style="list-style-type:circle;">A player receives a red card if they commit any of these following offences.</li>
+	<ul><li>is guilty of serious foul play</li>	
+	<li>is guilty of violent conduct</li>
+	<li>spits on an opponent or any other person</li>
+	<li>denies the opposing team a goal or an obvious goal-scoring opportunity by deliberately handling the ball</li>
+	<li>denies an obvious goal-scoring opportunity to an opponent moving towards the player's goal by an offence punishable by a free kick or penalty kick</li>
+	<li>uses offensive or insulting or abusive language and/or gestures</li>
+	<li>receives a second yellow card in the same match</li>
+	</ul>
+	</ul>
+	<a href="index.html"><p style="text-align:center">Home</p></a>
+</div>
+</body>
+</html>

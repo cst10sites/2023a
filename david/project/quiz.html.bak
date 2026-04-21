@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+<link rel="icon" type="image/x-icon" href="favicon.png">
+<title>Football</title>
+<style></style>
+<link rel="Stylesheet" href="Stylesheet4.css">
+</head>
+<body>
+<h1>1. What was Football originally named?</h1><br>
+<form>
+  <input type="radio" name="choice" value="Folk_Football"> Folk Football <br>
+  <input type="radio" name="choice" value="Association_Football"> Association Football <br>
+  <input type="radio" name="choice" value="Soccer"> Soccer <br>
+  <input type="radio" name="choice" value="None of The Above"> None of The Above <br>
+</form>
+<button onclick="submitAnswer()">Submit Answer</button>
+<p style="text-align:right;"><a href="Q2.html">Next question</a></p>
+
+<script>
+var submitAnswer = function() {
+
+  var radios = document.getElementsByName('choice');
+  var val= "";
+  for (var i = 0, length = radios.length; i < length; i++) {
+      if (radios[i].checked) {
+         val = radios[i].value; 
+         break;
+       }
+  }
+  
+  if (val == "" ) {
+    alert('please select a choice');
+  } else if ( val == "Folk_Football" ) {
+    alert('Good choice');
+  } else {
+    alert('Rethink your life choices');
+  }
+};
+</script>
+</body>
+</html>

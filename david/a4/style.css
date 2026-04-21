@@ -1,0 +1,10 @@
+body { 
+	text-align: center;
+	font-family: Comic Sans MS;
+}
+	
+button {
+	padding: 0;
+	border: none;
+	background: none;
+}

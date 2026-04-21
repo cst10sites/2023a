@@ -1,0 +1,41 @@
+body {
+	font-family: Century Gothic;
+	color: #d2d4d6;
+	background-color: #151617
+}
+
+img {
+  filter: grayscale(100%);
+}
+
+a {
+	text-align: center;
+}
+
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+  font-size: 40px;
+}
+
+.left {
+  position: absolute;
+  left: 16.6665%;
+  top: 40%;
+  color:white;
+  font-size: 40px;
+  transform: translate(-50%, -50%);
+}
+
+.right {
+  position: absolute;
+  right: 9%;
+  top: 40%;
+  color:white;
+  font-size: 40px;
+  transform: translate(-50%, -50%);
+}

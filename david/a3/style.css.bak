@@ -1,0 +1,35 @@
+body {
+	background-color: black;
+	font-family: courier;
+	color: lime;
+}
+
+a {
+	color: cyan;
+}
+
+a:hover { 
+	color: red;
+}
+
+table, th, td {
+	border: 2px lime solid; 
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th,td {
+	padding: 5px;
+	text-align: left;
+}
+
+th {
+	font-size: 20px;
+}
+
+h1 {
+	font-size: 30px;
+	text-align: center;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+<link rel="icon" type="image/x-icon" href="favicon.png">
+<title>Quiz</title>
+<style></style>
+<link rel="Stylesheet" href="Stylesheet4.css">
+</head>
+<body>
+<h1>5. Who is the GOAT?</h1><br>
+<form>
+  <input type="radio" name="choice" value="Right"> Cristiano Ronaldo <br>
+  <input type="radio" name="choice" value="Right"> Maradona <br>
+  <input type="radio" name="choice" value="Right"> Lionel Messi <br>
+  <input type="radio" name="choice" value="Right"> Pelé <br>
+</form>
+<button onclick="submitAnswer()">Submit Answer</button>
+<p style="text-align:right;"><a href="index.html">Home</a></p>
+
+<script>
+var submitAnswer = function() {
+
+  var radios = document.getElementsByName('choice');
+  var val= "";
+  for (var i = 0, length = radios.length; i < length; i++) {
+      if (radios[i].checked) {
+         val = radios[i].value; 
+         break;
+       }
+  }
+  
+  if (val == "" ) {
+    alert('please select a choice');
+  } else if ( val == "Right" ) {
+    alert('Good choice');
+  } else {
+    alert('Rethink your life choices');
+  }
+};
+</script>
+</body>
+</html>

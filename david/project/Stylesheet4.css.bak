@@ -1,0 +1,21 @@
+body {
+	font-size: 40px;
+	font-family: Century Gothic;
+	color: #d2d4d6;
+	background-color: #151617;
+}
+
+button {
+		font-family: Century Gothic;
+}
+	
+a {
+  text-decoration: none;
+  background-color: #161617;
+  color: #444444;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}

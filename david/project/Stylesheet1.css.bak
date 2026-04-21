@@ -1,0 +1,32 @@
+body {
+	font-family: Century Gothic;
+	color: white;
+	background-color: #151617;
+	background-image: url("Maradona.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+
+h1 {
+	font-size: 40px;
+	text-align: center;
+}
+
+ul {
+    display: table; 
+    margin: 0 auto;
+    text-align: left;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.5);;
+}
+
+a {
+	color: white;
+	text-align: center;
+}
+
+
+	
