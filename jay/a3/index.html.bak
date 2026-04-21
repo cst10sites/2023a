@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 3</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+
+<body>
+<h1>HTML Guide</h1>
+<h2>Common HTML Tags inside &lt;body&gt;</h2>
+<p>Click <a href="head.html">here</a> to see other page.</p>
+
+<table style="width:100%;">
+	<tr>
+	<th style="width:50%;">Tag</th>
+	<th style="width:30%;">Definition</th>
+	<th style="width:20%;">Examples</th>
+	</tr>
+	
+	<tr>
+	<td>&lt;img src="link" alt="pic"&gt;</td>
+	<td>Image</td>
+	<td><img alt="bugatti" style="width:40%;" src="bugatti.jpg"></td>
+	</tr>
+	
+	<tr>
+	<td>&lt;h1&gt;to&lt;h6&gt;</td>
+	<td>Defines HTML headings</td>
+	<td><h2>Hi</h2> 
+		<h6>Hi</h6></td>
+	</tr>
+	
+	<tr>
+	<td>&lt;hr&gt;</td>
+	<td>Defines a thematic change in the content</td>
+	<td><hr>Hi<hr></td>
+	</tr>
+	
+	<tr>
+	<td>&lt;em&gt;</td>
+	<td>Defines emphasized text </td>
+	<td><em>Hi</em></td>
+	</tr>
+	
+	<tr>
+	<td>&lt;p&gt;</td>
+	<td>Defines a paragraph</td>
+	<td><p> This is a paragraph</p>
+		<p> This is another paragraph</p></td>
+	</tr>
+	
+	<tr>
+	<td>&lt;br&gt;</td>
+	<td>Defines a single line break</td>
+	<td>Hi<br>Hi</td>
+	</tr>
+	
+	<tr>
+	<td>&lt;ul&gt;</td>
+	<td>Defines an unordered list</td>
+	<td><ul> 
+	 <li>Hi</li></ul></td>
+	</tr>
+	
+	<tr>
+	<td>&lt;a&gt;</td>
+	<td>Defines a hyperlink</td>
+	<td><a target="_blank" href="https://www.apple.com/ca/">
+<img alt="" style="width:20%;" src="https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png">
+</a></td>
+	</tr>
+	
+	<tr>
+	<td>&lt;span&gt;</td>
+	<td>Defines a section in a document</td>
+	<td><p>This is a
+<span style="color: red;">red</span> word.</P></td>
+	</tr>
+	
+	
+	<tr>
+	<td>&lt;button&gt;</td>
+	<td>Defines a clickable button</td>
+	<td><a class="btn" href="https://youtube.com" target="_blank">YouTube</a></td>
+	</tr>
+	
+	<tr>
+	<td>&lt;sub&gt;</td>
+	<td>Defines subscripted text</td>
+	<td><p>Hi</p><sub>Hi</sub></td>
+	</tr>
+	
+</table>	
+</body>
+</html>

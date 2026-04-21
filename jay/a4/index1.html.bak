@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<style>
+body {
+
+	text-align:center;
+
+}
+
+</style>
+</head>
+<body>
+<h1>Cookie Clicker Game</h1>
+<input type="image" src="cookie.png" onclick= "updateCPS();" alt = "cookie clicker">
+
+<p>Total Clicks</p><p id="displayClicks"></p>
+<p>Clicks per second</p><p id="displayTime"></p>
+
+<script>
+var startTime = new Date();
+var nClicks = 0;
+
+function updateCPS() {
+	if (nClicks == 0) {
+	startTime = new Date();
+	nClicks = nClicks + 1;
+	document.getElementById('displayClicks').innerHTML = nClicks;
+	
+	}
+
+	else {
+	var currentTime = new Date();
+	var timeElapsed = (currentTime - startTime)/1000;
+	nClicks = nClicks + 1;
+	document.getElementById('displayTime').innerHTML = nClicks/timeElapsed;
+	document.getElementById('displayClicks').innerHTML = nClicks;
+	
+	
+	// note: this part runs when nclicks > 0
+	// create variable currenttime 
+	// create varibale timeelapsed and subtract start and currentime 
+	// calculate CPS = nclicks/ timeElapsed
+	// but timeElapsed be measured in seconds (not milliseconds)
+	// display CPS using id 
+	
+	}
+//	if (nClicks > 0)  subtract currentTime by startTime (to calculate timeElapsed) and 
+//increase nClicks by 1; display CPS on screen.
+
+
+}
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

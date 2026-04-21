@@ -1,0 +1,39 @@
+body{
+	font-family: Monaco;
+	color: white;
+	background-color: rgb(14, 36, 74);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	margin: 100px; 25px
+
+}
+
+a{
+	color: white;
+	font-family: Monaco;
+}
+
+a:hover {
+	color:purple;
+}
+
+
+table, th, td{
+	border: 2px solid white;
+	width: 100px; 
+	height: 100px;}
+table{
+	border-collapse: collapse;
+}
+th, td{
+	padding: 5px;
+	text-align: center;
+	}
+div{
+	padding: 50px;	
+	color:white;
+	background-color: rgb(255, 255, 255, 0.2);
+	
+
+}

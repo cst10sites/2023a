@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Quiz</title> 
+<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+body {
+	background-color:LemonChiffon;
+	text-align: center;
+
+}
+
+
+</style>
+</head>
+<body> 
+<p>Click <a href="index.html">here</a> to go to cookie clicker</p>
+<h3>Coding Language Quiz</h3> 
+<div>
+<form>
+    <label><strong>What is the coding language for designing the background of a website?</strong></label>
+    <div>
+	<input type="radio" value="HTML" name="group">
+    <label>HTML</label><br>
+    <input type="radio" value="JavaScript" name="group">
+    <label>JavaScript</label><br>
+    <input id="correctLang" type="radio" value="CSS" name="group">
+    <label>CSS</label><br>
+	<input type="radio" value="Python" name="group">
+    <label>Python</label><br>
+	
+    <input type="button" value="Submit" onclick="checkLang();"><br> 
+	
+    <input type="reset"><br> 
+</form>
+
+
+
+<script>  
+
+function checkLang() {
+    var correctAnswer = document.getElementById("correctLang").checked;
+
+    
+    if (correctAnswer == true) {
+        alert("Your answer is correct!");
+    }
+    else {
+        alert("That is incorrect");
+    }   
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+</body> 
+</html>

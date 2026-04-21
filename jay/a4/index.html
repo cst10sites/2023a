@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<style>
+body {
+    background-color: #808080;
+	color: #FFFFFF;
+	margin: 100px 200px;
+	font-family: Arial;
+}
+
+</style>
+</head>
+<body>
+<h1>Quiz</h1>
+<form>
+    <label>What is a description of &lt;a&gt;</label><br>
+    <input id="correctDescription" type="radio" value="Defines a hyperlink" name="group">
+    <label>Defines a hyperlink</label><br>
+    <input type="radio" value="	Defines an abbreviation or an acronym" name="group">
+    <label>	Defines an abbreviation or an acronym</label><br>
+    <input type="radio" value="Defines an acronym" name="group">
+    <label>Defines an acronym</label><br>
+	<input type="radio" value="	Defines bold text" name="group">
+    <label>	Defines bold text</label><br>
+    <input type="button" value="Submit" onclick="checkDescription();"><br> 
+	<input type="reset"><br> 
+</form>
+
+
+
+<form>
+    <label>Which HTML element do not we put the JavaScript?</label><br>
+    <input id="correct0" type="checkbox" value="script">
+    <label>&lt;script&gt;</label>
+    <input id="correct1" type="checkbox" value="javascript">
+    <label>&lt;javascript&gt;</label><br>
+    <input id="correct2" type="checkbox" value="js">
+    <label>&lt;js&gt;</label>
+    <input id="correct3" type="checkbox" value="scripting">
+    <label>&lt;scripting&gt;</label><br>
+    <input type="button" value="sumbit" onclick="jsAndScripting();"><br> 
+	<input type="reset"><br> 
+</form>
+
+
+<p>Click <a target="_blank" href="index1.html">here</a> to go Cookie Clicker game.
+</p>
+
+<script>
+
+function checkDescription() {
+	var correctAnswer = document.getElementById("correctDescription").checked;
+
+	
+	if (correctAnswer == true) {
+		alert("Correct!!!");
+	}
+	else {
+		alert("Try again...");
+	}
+	
+}
+
+function jsAndScripting() {
+	
+	var correctAns1 = document.getElementById("correct1").checked;
+	var correctAns2 = document.getElementById("correct2").checked;
+	var correctAns3 = document.getElementById("correct3").checked;
+	var incorrectAns = document.getElementById("correct0").checked;
+	if (correctAns1 == true && correctAns2 == true && correctAns3 == true && incorrectAns == false) {
+		alert("correct!!");
+	}
+	else {
+		alert ("Try again...")
+	}
+	}
+</script>
+</body>
+</html>
+

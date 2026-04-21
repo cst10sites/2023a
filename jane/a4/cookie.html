@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cookie Clicker</title>
+</head>
+<body>
+<h2>Cookie Clicker</h2>
+
+
+
+<style>
+body{
+
+
+	background-color: pink;
+	margin: 50px;
+	text-align: center;
+ }
+ div{
+	border-style: solid; 
+	padding: 15px;
+	border-radius: 12px;
+	border-color: white;
+ }
+ </style>
+ 
+ 
+<div>
+
+
+
+
+<input type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0gNh9bFIYEoF6ZoBU0uEmJT0APWFVI5784w&usqp=CAU" alt="Submit" onclick="updateCPS();">
+
+<p>Total Clicks</p><p id="display"></p>
+<p>Clicks Per Second</p><p id="displayTime"></p>
+</div>
+<script>
+
+
+	var startTime = new Date();
+	var nClicks = 0;
+
+function updateCPS() {
+
+	if (nClicks == 0){
+
+		startTime = new Date ();
+		nClicks = nClicks + 1;
+		document.getElementById('display').innerHTML = nClicks;
+	}
+
+ 
+	else{
+		var currentTime = new Date();
+		var timeElapsed = (currentTime - startTime)/1000;
+		
+		
+		nClicks = nClicks + 1;
+		document.getElementById('display').innerHTML = nClicks;
+		document.getElementById('displayTime').innerHTML = nClicks/timeElapsed;
+	}
+
+	
+if (nClicks >0){
+}
+
+
+
+
+
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

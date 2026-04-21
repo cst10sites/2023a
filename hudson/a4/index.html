@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+body {
+	background-color:brown;
+	text-align: center;
+
+}
+
+
+</style>
+</head>
+<body> 
+<p>Click <a href="quiz.html">here</a> to go to quiz</p>
+<h1>Cookie Clicker Game</h1>
+<p><strong>Click the cookie as fast as you can to see how fast your CPS is.</strong></p>
+<input style="width:30%;" type="image" src="580b57fbd9996e24bc43c0fc.png" onclick="updateCPS();" class="center">
+<br>
+<button onclick="resetWatch();">Reset Clicks</button>
+<h3>Your CPS</h3><h3 id="cps"></h3>
+<H3>Amount of Clicks:</h3><h3 id="display"></h3>
+<h3>Time Elapsed:</h3><h3 id="timeElapsed"></h3>
+
+
+<script>
+
+var startTime = new Date();
+var nClicks = 0; 
+
+function resetWatch() {
+	window.location.reload();
+}
+
+function updateCPS() {
+	if (nClicks == 0) {
+		startTime = new Date();
+		nClicks = nClicks +1;
+		document.getElementById('display').innerHTML = nClicks;
+		document.getElementById('cps').innerHTML = CPS;
+		document.getElementById('timeElapsed').innerHTML = timeElapsed / 1000;
+		
+	}	
+	else {
+		var currentTime = new Date();
+		var timeElapsed = currentTime - startTime;
+		document.getElementById('timeElapsed').innerHTML = timeElapsed / 1000;
+		var CPS = nClicks / (timeElapsed / 1000);
+		document.getElementById('cps').innerHTML = CPS;
+		document.getElementById('display').innerHTML = nClicks;
+		nClicks = nClicks + 1;
+	}
+}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+
+
+h1 {
+	-webkit-text-stroke: 1px white;
+	
+}
+
+
+
+a.btn{
+
+	background-color: blue;
+	padding: 15px 25px;
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 25px;
+	border-style: solid;
+	border-color: cyan; 
+	font-size: 2em;
+}
+a{
+	color: orange;
+	
+}
+
+a:hover {
+	color: yellow;
+	
+}
+
+table, th, td{
+	border: 3px solid orange
+	
+}
+
+table{
+	border-collapse: collapse;
+	
+}
+
+th, td{
+	padding: 5px;
+	text-align: left; 
+}

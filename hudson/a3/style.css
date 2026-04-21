@@ -1,0 +1,36 @@
+body {
+	background-color: black;
+	background-image:	url("https://coolbackgrounds.io/images/backgrounds/index/sea-edge-79ab30e2.png");
+	background-attachment: fixed; 
+	background-repeat: no-repeat;
+	background-size: 120% auto; 
+	color: white;
+	font-family: Courier;
+	margin: 100px 25px;
+	-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+} 
+
+h1 { 
+	-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white; 
+} 
+
+div { 
+	padding: 50px; 
+	background: rgba(200, 200, 200, 0.5);
+
+	color: black;
+} 
+
+table, th, td { 
+	border: 2px solid white; 
+} 
+table { 
+	border-collapse: collapse; 
+} 
+
+th, td { 
+	padding: 5px; 
+	text-align: left; 
+}
