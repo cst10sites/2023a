@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+</head>
+<body>
+<center>
+<h1>Cookie Clicker Game</h1>
+<p>Click the cookie as fast as you can<p>
+<button onclick="updateCPS()"><img alt="" src="cookie.jpg" style="width:300px;"></img></button>
+<p>Clicks per second:</p>
+<p id="display"><p>
+</center>
+
+<script>
+
+var nClicks = 0;
+var startTime = new Date();
+
+function updateCPS() {
+	if (nClicks == 0) {
+		startTime = new Date();
+		nClicks = nClicks + 1;
+	}
+	else {
+		var currentTime = new Date();
+		var timeElapsed = (currentTime - startTime)/1000;
+		nClicks = nClicks + 1;
+		var CPS = nClicks/timeElapsed;
+		document.getElementById('display').innerHTML = CPS;
+	}
+}
+
+</script>
+</body>
+</html>

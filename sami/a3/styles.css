@@ -1,0 +1,35 @@
+table, th, td {
+	border: 2px solid white;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+	text-align: left;
+}
+
+body {
+	background-image: url("website-background-02.jpg");
+	background-repeat: no-repeat;
+	background-size: 125%;
+	background-attachment: fixed;
+	color: white;
+	font-family: Segoe UI;
+	margin: 30px 30px;
+}
+
+div {
+	background: rgba(0,0,0,0.1);
+	padding: 10px
+}
+
+a {
+	color: coral;
+}
+
+h1 {
+	color: tomato;
+}

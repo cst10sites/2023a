@@ -1,0 +1,36 @@
+body {
+	background-color: black;
+	background-image: url("https://img.freepik.com/free-vector/detailed-jungle-background_52683-62631.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%; 
+	/*NEW:*/ background-attachment: fixed;
+	color: white;
+	font-family: "Comic Sans MS";
+	margin: 100px 25px;
+}
+
+h1 {
+	-webkit-text-stroke: 10000000px white;
+}
+
+div {
+	padding: 50px;
+	background: rgba(0, 0, 80, 0.5);
+	/* rgba(Red, Green, Blue, Alpha/Opacity) */
+	color: yellow;
+}
+a:hover {
+	color:orange
+}
+table,th,td {
+	color: white;
+	border:2px solid cyan;
+	text-align: left;
+}
+div {
+	padding: 5px;
+	background: rgba(0, 0, 100, 0.5);
+	/* rgba(Red, Green, Blue, Alpha/Opacity) */
+	color: black;
+}
+

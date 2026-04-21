@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--index.html-->
+<head>
+<meta charset="UTF-8">
+<title>Lesson 5</title>
+<style></style><!--Internal CSS-->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Lesson 4: Modern web Higharchy, iframe and tables</h1>
+<div>
+<h2> Website Higharchy</h2>
+<p> This lesson is copied from, lesson 4 and  focuses on subfolders</p>
+
+<h2>External CSS</h2>
+<p>Internal and inline CSS are CSS codes that go
+<strong>inside</strong> the HTML file. External
+CSS is a separate file that is referenced in the
+&lt;head&gt; tag.</p>
+
+<p> Click <a &href ="index../html">here</a></p>
+<h2>Embedding (iframe)</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9YffrCViTVk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d844.1677968556445!2d-123.16417312101359!3d49.261816003230166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673aef44b8213%3A0xfed77b389f0f9a70!2sKitsilano%20Secondary%20School!5e0!3m2!1sen!2sca!4v1664919958874!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>     
+</div>
+</body>
+</html>

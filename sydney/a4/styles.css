@@ -1,0 +1,25 @@
+a.btn {
+	background-color: white; 
+	padding: 15px 20px;
+	display: inline-block;
+	text-decoration: none;
+	color: darkblue;
+	display: inline-block;
+	font-size: 1.4em;
+	margin: 5px;
+	border-radius: 50px;
+	border-style: solid;
+	border-color: lightblue;
+}
+a.btn:hover {
+	background-color: lightblue;
+	color: darkblue;
+}
+body {
+	background-color: white;
+	color: white;
+	font-family: Arial;
+	margin: 50px 25px;
+	font-size: 1.2em;
+	
+}

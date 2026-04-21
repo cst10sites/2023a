@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<title>Assignment 4</title>
+<style>
+body {
+	background-color: LightSteelBlue;
+	font-family: tahoma;
+	margin: 25px 50px;
+}
+
+input[type=button] {
+	background-color: LightCyan;
+	border: solid;
+	border-radius: 5px;
+	border-width: 1px;
+}
+
+input[type=reset] {
+	background-color: LightCyan;
+	border: solid;
+	border-radius: 5px;
+	border-width: 1px;
+}
+
+</style>
+</head>
+<body>
+<h1>HTML Quiz</h1>
+<p>Play Cookie Clicker <a href="cookie.html">here</a>.</p>
+
+<form>
+	<label>What symbol is used at the beginning of HTML entities?</label>
+    <select id="symbolChoice">
+        <option value="semicolon">Semicolon</option>
+        <option value="ampersand">Ampersand</option>
+        <option value="hashtag">Hashtag</option>
+        <option value="angle">Angle bracket</option>
+    </select>
+    <br>
+    <input type="button" value="Check" onclick="checkSymbol();">
+    <input type="reset"><br>
+</form>
+<br>
+<form>
+    <label>Select all of the following that is not an HTML attribute.</label><br>
+    <input id="choice1" type="checkbox" value="id">
+    <label>id</label><br>
+    <input id="choice2" type="checkbox" value="src">
+    <label>src</label><br>
+    <input id="choice3" type="checkbox" value="picture">
+    <label>picture</label><br>
+    <input id="choice4" type="checkbox" value="ondblclick">
+    <label>ondblclick</label><br>
+	<input id="choice5" type="checkbox" value="color">
+    <label>color</label><br>
+    <input type="button" value="Check" onclick="checkAttribute()">
+    <input type="reset"><br> 
+</form>
+
+<script>
+function checkSymbol() {
+    var correctAnswer = document.getElementById("symbolChoice").value;
+    
+    if (correctAnswer == "ampersand") {
+        alert("Correct!");
+    }
+    else {
+        alert("Incorrect, try again.");
+    }
+}
+
+function checkAttribute() {
+    var choice1 = document.getElementById("choice1").checked;
+    var choice2 = document.getElementById("choice2").checked;
+    var choice3 = document.getElementById("choice3").checked;
+    var choice4 = document.getElementById("choice4").checked;
+	var choice5 = document.getElementById("choice5").checked;
+    
+    if (choice1 == false && choice2 == false && choice3 == true && choice4 == false && choice5 == true) {
+        alert("Good job!");
+    }
+	else {
+		alert("No, try again.");
+	}
+}
+</script>
+</body>
+</html>

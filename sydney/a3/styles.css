@@ -1,0 +1,54 @@
+a.btn {
+	background-color: white; 
+	padding: 15px 20px;
+	display: inline-block;
+	text-decoration: none;
+	color: darkblue;
+	display: inline-block;
+	font-size: 1.4em;
+	margin: 5px;
+}
+table, th, td {
+	border: 2px solid black;
+	border-color: white;
+}
+table {
+	border-collapse: collapse;
+	padding: 15px 25px;
+}
+th, td {
+	padding: 5px;
+	text-align: left;
+	font-size: 1.1em;
+}
+th {
+	color: white;
+	font-size: 1.4em;
+}
+body {
+	margin: 25px 50px;
+	background-image: url("https://wallup.net/wp-content/uploads/2017/11/23/513025-water-underwater-sea-sun_rays-blue-photography-simple.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	color: white;
+	font-family: Georgia;
+}
+a {
+	color: white
+}
+a:hover {
+	color: lightblue;
+}
+a.btn:hover {
+	background-color: lightblue;
+	color: darkblue;
+
+}
+div {
+	background: rgba(133, 182, 255, 0.5);
+	
+}
+
+
+	

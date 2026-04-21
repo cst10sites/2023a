@@ -1,0 +1,48 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Single-Question Quiz</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+	color: black;
+}
+</style>
+<body>
+<a class="btn" href="index.html">Cookie Clicker</a>
+<a class="btn" href="quiz.html">Single Question Quiz</a>
+<form>
+	<label>What is the HTML tag for the 2 in H<sub>2</sub>O? </label>
+	<select id="HTMLAnswer">
+		<option value="c1">&lt;sup&gt;</option>
+		<option value="c2">&lt;small&gt;</option>
+		<option value="c3">&lt;sub&gt;</option>
+		<option value="c4">&lt;ins&gt;</option>
+	</select>
+	<br>
+	<label id="answerDisplay"></label>
+	<br>
+	<input type="button" value="Check" onclick="checkAnswer();">
+	<input type="reset" onclick="window.location.reload()">
+	<br>
+</form>
+
+<script>
+function checkAnswer() {
+    var correctAnswer = document.getElementById("HTMLAnswer").value;
+	
+    
+    if (correctAnswer == "c3") {
+        document.getElementById("answerDisplay").innerHTML = "This is the right answer!";
+    }
+    else {
+        document.getElementById("answerDisplay").innerHTML = "This is the wrong answer, try again.";
+	}
+}
+
+
+</script>
+</body>
+</html>
