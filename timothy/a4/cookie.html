@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+</head>
+<body>
+<h2>Cookie Clicker</h2>
+<p id="cps">Clicks Per Second:</p>
+<button onclick="updateCPS();"><img src="https://cdn.pixabay.com/photo/2020/11/28/11/25/cookie-5784367_1280.png" width="300px"></button>
+<p id="total">Total Clicks: 0</p>
+
+
+<script>
+
+var nClicks = 0;
+var startTime = new Date();
+
+function updateCPS() {
+	if (nClicks == 0) {
+		// reset startTime
+		startTime = new Date();
+		// increase nClicks by 1
+		nClicks++;
+	}
+	else {
+		nClicks++;
+		// note: this part runs when nClicks > 0
+		// 1. create variable currentTime
+		var currentTime = new Date();
+		// 2. create variable timeElapsed and subtract start and currentTime
+		var timeElapsed = (currentTime-startTime) / 1000;
+		// 3. calculate CPS = nClicks ÷ timeElapsed 
+		var CPS = nClicks / timeElapsed;
+		//    BUT timeElapsed be measured in seconds (not milliseconds)
+		// 4. display CPS using id
+	document.getElementById('cps').innerHTML = "Clicks Per Second " + CPS.toFixed(2);
+	
+	}
+	document.getElementById('total').innerHTML = "Total Clicks: " + nClicks;
+}
+</script>
+</body>
+</html>

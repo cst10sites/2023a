@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Assignment 4</title>
+
+<style>
+
+Body {
+
+	Background-color: grey;
+	
+	color: black;
+	
+	margin: 50px 100px;
+	
+	font-family: Fira Sans Serif;
+	
+	text-align: Center;
+}
+
+h1{
+
+	color: Brown;
+}
+
+ 
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Bean Clicker Game</h1>
+
+<p>Click <a href="index.html">here</a> to go to index.html</p>
+
+<button id="close" class="closing" onClick="updateCPS();"><img alt src="beans.jpg"></button>
+
+
+
+<h2>Timer:<span id ="display2"> </span></h2>
+
+<h2>CPS:<span id = "display"> </span></h2>
+
+<h2>Clicks: <span id = "display3"> </span></h2>
+
+<script>
+
+var nClicks = 0;
+
+var startTime = new Date();
+
+function updateCPS() {
+    
+	if (nClicks == 0) {
+    
+	startTime = new Date();
+    
+	nClicks++;
+    
+	}
+    
+	else {
+        
+		var currentTime = new Date();
+       
+	   var timeElapsed = currentTime - startTime;
+        
+		document.getElementById('display2').innerHTML = timeElapsed / 1000;
+        
+		var CPS = nClicks / (timeElapsed / 1000);
+		
+		document.getElementById('display3').innerHTML = nClicks;
+        
+		document.getElementById('display').innerHTML = CPS;
+        
+		nClicks++;
+    }
+}
+
+</script>
+</body>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+<body style="background-color:powderblue;">
+<meta charset="UTF-8">
+<title>HTML Quiz:</title>
+
+</head>
+<body>
+
+<h1 style="text-align:center;">Quiz:</h1>
+
+<form>
+	 <label><b>Which one stands for HTML?</b></label><br>
+    <input id="HyperLinks and Text Markup Language" type="radio" value="HyperLinks and Text Markup Language" name="group">
+    <label>HyperLinks and Text Markup Language</label><br>
+    <input type="radio" value="Home Tool Markup Language" id="Apple" name="group">
+    <label>Home Tool Markup Language</label><br>
+    <input type="radio" value="HyperText Markup Language" id="HyperText Markup Language" name="group">
+    <label>HyperText Markup Language</label><br>
+	  <input type="radio" value="Hard Typing Monitor Language" id="Hard Typing Monitor Language" name="group">
+    <label>Hard Typing Monitor Language</label><br>
+    <input type="button" value="Submit" onclick="submitAnswer();"><br> 
+	<input type="reset"><br> 
+
+
+
+
+</form>
+<br>
+<br>
+<form>
+    <label><b>Which one's are used in the &lt;head&gt;?</b></label><br>
+    <input type="checkbox" value="&lt;meta charset="UTF-8&gt;" id="meta" name="group">
+    <label>&lt;meta charset="UTF-8&gt;</label>
+    <input type="checkbox" value="&lt;body&gt;" id="body" name="group">
+    <label>&lt;body&gt;</label><br>
+    <input id="title" type="checkbox" value="&lt;Title&gt;" name="group">
+    <label>&lt;Title&gt;</label>
+    <input id="script" type="checkbox" value="&lt;script&gt;" name="group">
+    <label>&lt;script&gt;</label><br>
+    <input type="button" value="Submit" onclick="checkAnswer();"><br> 
+	<input type="reset"><br> 
+</form>
+
+<script>
+	function submitAnswer()	{
+		if(document.getElementById('HyperText Markup Language').checked == true)	{
+			alert('Your answer is correct!');
+		}
+		else {
+			alert('You are wrong, please try again');
+		}
+		
+	}
+	
+	function checkAnswer() {
+		var correctAnswer1 = document.getElementById('meta').checked;
+		var correctAnswer2 = document.getElementById('title').checked;
+		var incorrectAnswer1 = document.getElementById('body').checked;
+		var incorrectAnswer2 = document.getElementById('script').checked;
+	
+		if (correctAnswer1 == true && correctAnswer2 == true && incorrectAnswer1 == false && incorrectAnswer2 == false)  {
+			alert('You are correct!');
+		}
+		else {
+			alert('You are wrong, please try again');
+		}
+	
+	
+	
+	
+	}
+	
+
+
+
+
+
+
+
+
+
+
+</script>
+
+<p>Click <a href="file:///C:/Users/1284674/OneDrive%20-%20Board%20of%20Education%20of%20SD%2039%20(Vancouver)/CST%2010/Websites/a4/cookie.html">here</a> to go to the Cookie Clicker game.
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Assignment 4</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+
+Body {
+
+	
+	color: black;
+	
+	margin: 50px 100px;
+	
+	font-family: Fira Sans Serif;
+	
+	
+}
+
+h1{
+
+	color: black;
+}
+
+
+
+</style>
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+
+<body>
+
+<h1><em>How well do you know HTML/CSS/JAVASCRIPT?</em></h1>
+
+
+
+<form>
+    <h2><label>What is HTML:</label><br></h2>
+    <h3><input id="correctLang" type="radio" value="HTML" name="group">
+    <label>Hyper Text Markup Language</label><br>
+    <input type="radio" value="CSS" name="group">
+    <label>Have Teabags Made Large</label><br>
+    <input type="radio" value="JavaScript" name="group">
+    <label>Hyper Teens make Loud sounds</label><br>
+	<input type="radio" value="JavaScript" name="group">
+	<label>Have The Monkey Laugh</label><br>
+    <input type="button" value="Submit" onclick="checkLang();"><br> 
+    <input type="reset"><br></h3>
+</form>
+
+<form>
+    <h2><label>What does css mean?</label><br></h2>
+    <h3><input id="choice1" type="checkbox" value="Cascading Style Sheets">
+    <label>Cascading Style Sheets</label>
+    <input id="choice2" type="checkbox" value="Contrasting style sheets">
+    <label>Contrasting style sheets</label><br>
+    <input id="choice3" type="checkbox" value="Complicated style sheets">
+    <label>Complicated style sheets</label>
+    <input id="choice4" type="checkbox" value="Cool style system">
+    <label>Cool style system</label><br>
+    <input type="button" value="Submit" onclick="button();"><br> 
+    <input type="reset"><br></h3>
+</form>
+
+<h3>Click <a href="bean.html">here</a> to go to bean.html</h3>
+
+<script>
+function checkLang() {
+    var correctAnswer = document.getElementById("correctLang").checked;
+    // alert(correctAnswer); true or false
+    
+    if (correctAnswer == true) {
+        alert("Wow you get a Cookie!!!");
+    }
+    else {
+        alert("Just get good");
+    }
+    
+}
+
+function button() {
+    // Pop-up "Easter egg" when eggs and pork (i.e. choice3 and 4) are selected.
+    var choice1 = document.getElementById("choice1").checked;
+    var choice2 = document.getElementById("choice2").checked;
+    var choice3 = document.getElementById("choice3").checked; // eggs
+    var choice4 = document.getElementById("choice4").checked; // pork
+    
+    if (choice1 == true && choice2 == false && choice3 == false && choice4 == false) {
+        alert("Yayyy your smart!!!");
+    }   
+}
+
+</script>
+</body>
+</html>

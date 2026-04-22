@@ -1,0 +1,32 @@
+table, th, td{
+	border:2px solid
+
+}	
+table{
+	border-collapse: collapse;
+
+}
+th,td{
+	padding:5px;
+	text-align:left;
+	font-size: 20px;
+}	
+
+body {
+	background-color: black;
+	background-image: url("https://cdn4.vectorstock.com/i/1000x1000/47/13/nice-background-vector-16234713.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%; 
+	background-attachment: fixed;
+	color: white;
+	font-family: "Comic Sans MS";
+	margin: 100px 25px;
+}
+
+a{
+	color:yellow;
+}
+
+a:hover{
+	color:orange;
+}
