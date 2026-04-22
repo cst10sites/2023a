@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="icon" type="image/x-icon" href="boom.ico">
+<style>
+body{
+	background-color: RebeccaPurple;
+	color: White;
+	font-family: Garamond;
+	margin: 50px 50px;
+	
+}
+
+a{
+	text-decoration: none;
+
+}
+
+div{
+	background: Purple;
+	border-style: double; 
+	border-width: thick;
+	border-color: white;
+	padding: 5px 20px;
+	border-radius: 12px;
+}
+
+</style>
+</head>
+<body>
+
+<div>
+
+<h1>Quiz</h1>
+<form>
+	<label>Which HTML tag creates superscripted text? </label><br>
+	<input type="radio" value="sub" name="group">
+	<label>&lt;sub&gt;</label><br>
+	<input id="correct" type="radio" value="sup" name="group">
+	<label>&lt;sup&gt;</label><br>
+	<input type="radio" value="superscript" name="group">
+	<label>&lt;superscript&gt;</label><br>
+	<input type="radio" value="strong" name="group">
+	<label>&lt;strong&gt;</label><br>
+	
+	<input type="button" value="Check Answer" onclick="checkAnswer();">
+	<input type="reset">
+
+</form>
+
+<br>
+
+<form>
+    <label>Which of these can you do with CSS?</label><br>
+    <input id="incorrect" type="checkbox" value="write text">
+    <label>Write text</label>
+    <input id="correct1" type="checkbox" value="background color">
+    <label>Change the background color</label><br>
+    <input id="correct2" type="checkbox" value="font">
+    <label>Change the font</label>
+    <input id="correct3" type="checkbox" value="margins">
+    <label>Add margins</label><br>
+	
+	<input type="button" value="Check Answer 2" onclick="checkAnswer2();">
+    <input type="reset"><br> 
+</form>
+
+<p>Click <a href="cookie.html"><span style="color:tan"> here </span> </a> to go to the cookie clicker.<p>
+
+</div>
+
+
+<script>
+//Question 1
+function checkAnswer(){
+	var correctAnswer = document.getElementById("correct").checked
+	
+	if (correctAnswer == true){
+	alert ("Answered correctly!");
+	}
+	
+	else {
+	alert ("Try again");
+	}
+}
+
+//Question 2
+function checkAnswer2(){
+	var correctAns1= document.getElementById("correct1").checked;
+	var correctAns2= document.getElementById("correct2").checked;
+	var correctAns3= document.getElementById("correct3").checked;
+	var incorrectAns= document.getElementById("incorrect").checked;
+	
+	if(correctAns1 == true && correctAns2 == true && correctAns3 == true && incorrectAns == false) {
+		alert("Answered correctly");
+		}
+	
+	else {
+	alert ("Try again");
+	}
+}
+
+</script>
+
+
+</body>
+</html>
