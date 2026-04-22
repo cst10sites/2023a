@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<title>Assignment Three</title>
+<style>
+body {
+	background-color: black;
+	color: white;
+	margin: 25px 125px;
+}
+audio {
+	autoplay: 1;
+}
+div {
+	background-color: black;
+}
+</style><!--Internal CSS-->
+</head>
+<body>
+<div>
+<p>Congrats, it is time for your reward!</p>
+<button onclick="showHi();">Reward</button>
+<p id="display"></p>
+</div>
+<audio controls autoplay>
+  <source src="blue.ogg" type="audio/ogg">
+  <source src="blue.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<script>
+function showHi () {
+	// show "hi" in id="display" (only once)
+	// document.getElementById('display').innerHTML = 'hi';
+	
+	// show "hi" (multiple times)
+	document.getElementById('display').innerHTML =
+	document.getElementById('display').innerHTML + 'taco bell  ';
+}
+</script>
+</body>
+</html>

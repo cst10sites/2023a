@@ -1,0 +1,13 @@
+body {
+	background-image: URL("wood.png");
+	margin: 25px 125px;
+}
+a:hover {
+	color: cyan;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

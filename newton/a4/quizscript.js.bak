@@ -1,0 +1,58 @@
+// Example 1
+function showUserPassword() {
+    var user = document.getElementById("user").value;
+    var pwrd = document.getElementById("pwrd").value;
+    alert("Bank Number: " + user + "\nSecurity Code: " + pwrd);
+}
+// Example 2
+function checkLang() {
+    var correctAnswer = document.getElementById("correctLang").checked;
+    // alert(correctAnswer); true or false
+    
+    if (correctAnswer == true) {
+        alert("Saginaw, Michigan, September 29, 2000");
+    }
+    else {
+        alert("Unfortunately good sir, you are possitively, without any doubt, incorrect!");
+    }
+    
+}
+// Example 3
+function Bushism() {
+    // Pop-up "Easter egg" when eggs and pork (i.e. choice3 and 4) are selected.
+    var choice1 = document.getElementById("choice1").checked;
+    var choice2 = document.getElementById("choice2").checked;
+    var choice3 = document.getElementById("choice3").checked; // eggs
+    var choice4 = document.getElementById("choice4").checked; // pork
+    
+    if (choice1 == false && choice2 == false && choice3 == false && choice4 == true) {
+        alert("Half True!");
+    }   
+	if (choice1 == false && choice2 == false && choice3 == true && choice4 == false) {
+        alert("Half True!");
+    }   
+	if (choice1 == false && choice2 == false && choice3 == true && choice4 == true) {
+        alert("True! Congrats!");
+    }   
+	if (choice1 == false && choice2 == false && choice3 == false && choice4 == false) {
+        alert("Wrong. 64.114.223.84");
+    }   
+	if (choice1 == true && choice2 == true && choice3 == false && choice4 == false) {
+        alert("Wrong. 64.114.223.84");
+    }   
+	if (choice1 == false && choice2 == true && choice3 == false && choice4 == false) {
+        alert("Wrong. 64.114.223.84");
+    }   
+	if (choice1 == true && choice2 == false && choice3 == false && choice4 == false) {
+        alert("Wrong. 64.114.223.84");
+    }   
+}
+
+// Example 4
+function checkCar() {
+    var chosenCar = document.getElementById("carValue").value;
+    // .value is used for input and select tags to get data from them
+    document.getElementById("carDisplay").innerHTML = 
+        "Mr. Kam " + chosenCar;
+    // .innerHTML refers to code between tag with given id
+}

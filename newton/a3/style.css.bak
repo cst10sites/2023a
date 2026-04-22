@@ -1,0 +1,28 @@
+body {
+	background-color: black;
+	background-image: URL("background.gif");
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-attachment: fixed;
+	color: white;
+	font-family: Agency FB;
+	margin: 100px 25px;
+}
+table, th {
+	border: 2px solid yellow;
+}
+table {
+	border-collapse: collapse;
+}
+th, td {
+	padding: 5px;
+}
+td {
+  border-right: solid 1px yellow; 
+  border-left: solid 1px yellow;
+  border-bottom: solid 1px yellow;
+  border-top: solid 1px yellow;
+}
+div {
+	background-color: black;
+}

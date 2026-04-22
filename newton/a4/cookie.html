@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+<title>Cookie Clicker</title>
+<style></style>
+<link rel="stylesheet" href="cookiestyle.css">
+</head>
+<body>
+<audio controls autoplay loop>
+  <source src="depot.ogg" type="audio/ogg">
+  <source src="depot.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<h2>Cookie Click Now</h2>
+<input type="image" src="ohgod.png" alt="ohgod" onclick="updateCPS();">
+<!--<button onclick="updateCPS();">Click</button>!-->
+<p>Clicks</p>
+<p id="display"></p> <br> <p>Time on the Site</p>
+<p id="display2"></p> <br> <p>Clicks per Second</p>
+<p id="display3"></p>
+<hr>
+<h3>Time for your reward!</h3>
+<button onclick="tacoBell()">Reward</button>
+<p id="tacoBelldisplay"></p>
+<hr>
+<p>Click <a href="index.html">Here</a> to return to the Main Menu.</p>
+<p>Or, click <a href="quiz.html">Here</a> to check out our amazing quiz!</p>
+</body>
+<script>
+function tacoBell() {
+	document.getElementById('tacoBelldisplay').innerHTML =
+	document.getElementById('tacoBelldisplay').innerHTML + 'Curse you Perry the Platypus. ';
+}
+var startTime = new Date();
+var nClicks = 0;
+var currentTime = new Date();
+var timeElapsed = currentTime - startTime;
+function updateCPS() {
+	if (nClicks == 0) {
+		// reset startTime
+		// increase Nclicks
+		startTime = new Date();
+		nClicks = nClicks + 1
+	}
+	else {
+		var currentTime = new Date();
+		var timeElapsed = currentTime - startTime;
+		document.getElementById('display2').innerHTML = timeElapsed / 1000;
+		var CPS = nClicks / (timeElapsed / 1000);
+		document.getElementById('display3').innerHTML = CPS;
+		nClicks = nClicks + 1
+		// updateCPS = nClicks + timeElapsed
+		// note this part runs when nclicks > 0
+		// 1. create variable current time
+		// 2. create variable time elapsed and subtract start and current time
+		// 3. calculate CPS = nClicks + timeElapsed
+		//	BUT timeElapsed be measured in seconds (not miliseconds)
+		// 4. display CPS using id
+	}
+	
+	document.getElementById('display').innerHTML = nClicks;
+}
+</script>
+</html>

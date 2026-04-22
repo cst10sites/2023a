@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+<title>Quiz</title>
+<style></style>
+<link rel="stylesheet" href="quizstyle.css">
+</head>
+<body>
+
+<div>
+<h1>Welcome to my site! Before you begin, please give your bank info!</h1>
+<form>
+    <label><strong>First, input your bank number, and then your security code!:</strong></label><br>
+    <input type="text" id="user"><br>
+    <input type="password" id="pwrd"><br>
+    <input type="button" value="Submit" onclick="showUserPassword();">
+    <input type="reset"><br> <!--This is a special type of button that resets all values in the form that it belongs to-->
+    
+</form>
+
+<h1>Quiz time!</h1>
+<form>
+	<label><strong>Which of these did United States President, George W. Bush, say?</strong></label><br>
+    <input id="correctLang" type="radio" value="HTML" name="group">
+    <label>"I believe man and fish can coexist peacefully."</label><br>
+    <input type="radio" value="CSS" name="group">
+    <label>"I come before you and assume the Presidency at a moment rich with promise. We live in a peaceful, prosperous time, but we can make it better."</label><br>
+    <input type="radio" value="JavaScript" name="group">
+    <label>Neither</label><br>
+    <input type="button" value="Submit" onclick="checkLang();"><br> 
+	<input type="reset"><br> 
+</form>
+<br>
+<form>
+    <label><strong>What does the tag &lt;Marquee&gt; belong to</strong></label><br>
+    <input id="choice1" type="checkbox" value="milk">
+    <label>HTML</label>
+    <input id="choice2" type="checkbox" value="juice">
+    <label>CSS</label><br>
+    <input id="choice3" type="checkbox" value="eggs">
+    <label>HTML 4</label>
+    <input id="choice4" type="checkbox" value="pork">
+    <label>Deprecated</label><br>
+    <input type="button" value="Submit" onclick="Bushism();"><br> 
+    <input type="reset"><br> 
+</form>
+<br>
+<h3>Dropdown Menu</h3>
+<form>
+    <label>Which of these World War 2 Generals were in charge during the Battle of Kursk?</label>
+    <select id="carValue"><!--no input for dropdown-->
+        <option value="Placeholder">Placeholder</option>
+        <option value="Correct! ☭ Georgy Zhukov and ✠ Erich Von Manstein were the primary commanders of the opposing sides during the Battle of Kursk!">☭ Georgy Zhukov and ✠ Erich Von Manstein</option>
+        <option value="Incorrect!">✠ Erwin Rommel and ☭ Joseph Stalin</option>
+        <option value="Incorrect!">☭ Dmitri the Janitor and ✠ Frederich Paulus</option>
+    </select>
+    <br>
+    <input type="button" value="OK" onclick="checkCar();">
+    <input type="reset"><br> 
+</form>
+<p id="carDisplay"></p>
+<p>&copy; 2022 Newton Rama Corporation</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="width:300px;height:100px;" src="Rama.png" alt="Rama">
+<p>To go back to the home page, press <a href="index.html">here</a></p>
+<p>Or, if you want to; check out our cookie clicker! Press <a href="cookie.html">here</a></p>
+</div>
+</body>
+<script src="quizscript.js"></script>
+</html>
