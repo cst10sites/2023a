@@ -1,0 +1,52 @@
+
+body {
+	background-image: url("https://www.wallpapertip.com/wmimgs/102-1027350_color-wallpaper-4k.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%; 
+	background-attachment: fixed;
+	color: white;
+	font-family: Courier;
+	margin: 50px 100px;
+}
+
+h1 {
+	color: #9999ff;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: white;	
+}
+
+div {
+	padding: 50px;
+	background: rgba(0, 0, 100, 0.5);
+	/* rgba(Red, Green, Blue, Alpha/Opacity) */
+	color: Gainsboro;
+}
+
+a:hover {
+	color: gainsboro;
+}
+
+a {
+	
+	color: green;
+	
+}
+
+
+Table, th, td {
+	
+	border: 2px solid green;
+	
+}
+
+
+table {
+	border-collapse: collapse;
+	
+}
+
+
+th, td {
+	padding:5px;
+	text-align: center;
+}

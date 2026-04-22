@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 2</title>
+<style>
+	Body {
+	Background-color: Gainsboro;
+	color: black;
+	margin: 50px 100px;
+	font-family: Arial;
+}
+
+h2{
+	color: maroon;
+}
+</style>
+</head>
+<body>
+<h1>My Recipe</h1>
+<h2>Introduction</h2>
+<p>For my recipe, I chose to make a burrito, which comes from Mexico, rooting back to thousands of years ago. A burrito usually consists of at least: a flour tortilla, a meat filling, salsa, cheese, beans and rice.</p>
+<img alt="" style="width:100px;" src="burrito.jpg>
+
+<h2>Ingredients</h2>
+<ul>
+	<li>1 lb lean ground beef</li>
+	<li>1 ounce or one packet of taco seasoning mix</li>
+	<li>1 ½ cups beans </li>
+	<li>¾ cup corn kernels</li>
+</ul>
+
+
+
+
+<h2>Instructions</h2>
+<ol>
+	<li>Preheat oven to 350&deg;C</li>
+	<li>Cook beef with taco seasoning</li>
+	<li>Spread ¼ cup beans on your tortilla. Top with ½ cup rice, beef, 2 tablespoons corn, and ¼ cup cheese. </li>
+
+
+</ol>
+
+
+
+</body>
+</html>

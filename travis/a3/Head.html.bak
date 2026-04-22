@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>HTML Guide</h1>
+<div>
+<h2>Common HTML Tags</h2>
+<p>Click <a href="index.html">here</a> to go back to homepage.</p>
+
+
+<table style="width:60%">
+	<tr><!--table row-->
+	<th style="width:20%;">Tag</th>
+	<th style="width:20%;">Definitions</th>
+	<th style="width:60%;">Examples</th>
+	</tr>
+
+	<tr>
+	<th>&lt!DOCTYPE html&gt </td><!--table data--></th>
+	<th> Used to set type of document</th>
+	<th>&lt!DOCTYPE html&gt </th>
+	</tr>
+
+
+	<tr>
+	<th>&lthtml lang="en"&gt </td><!--table data--></th>
+	<th> This is the language setting</th>
+	<th> this is in english</th> 
+	</tr>
+
+	<tr>
+	<th>charset</th>
+	<th>specifies the character encoding for the html document</th>
+	<th>&ltmeta charset="UTF-8"&gt</th>
+	</tr>
+
+
+
+
+			<tr>
+	<th>title </td><!--table data--></th>
+	<th> This is how you add titles</th>
+	<th> <h1></h>  </th>
+	</tr>
+	
+	<tr>
+	<th>favicon</th>
+	<th>Use to set icons on the page bar</th>
+	<th> this page does not have a favicon</th>
+	</tr> 
+
+	
+	 
+	 
+	 
+	 
+	

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lesson 4</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<h2>Head</h2>
+<p>Click here to go to <a href="table.html">head</a> page</p>
+
+</body>
+</html>

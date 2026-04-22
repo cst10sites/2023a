@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Quiz Assignment 4</title>
+<style>
+Body {
+	Background-color: Gainsboro;
+	color: black;
+	margin: 50px 100px;
+	font-family: Verdana;
+	text-align: Center;
+}
+
+h1{
+	color: maroon;
+}
+
+
+
+
+}
+</style>
+</head>
+<body>
+
+<p>Click <a href="../index.html">here</a> to go to cookie clicker page page.</p>
+
+<h1>Quiz</h1>
+
+<form>
+    <label>What does CSS stand for?</label>
+    <select id="carValue">
+        <option value="a">Color Style Sheets</option>
+        <option value="b">Cascading Style Sheets</option>
+        <option value="c">Cool Style Sheets</option>
+        <option value="d">Complete Style Sheets</option>
+    </select>
+    <br>
+    <input type="button" value="OK" onclick="checkCar();">
+    <input type="reset"><br> 
+</form>
+<br></br>
+<form>
+    <label>What level of HTML do we currently use</label><br>
+    <input type="checkbox" value="milk">
+    <label>3</label>
+    <input type="checkbox" value="juice">
+    <label>4</label><br>
+    <input type="checkbox" value="eggs">
+    <label>5</label>
+    <input type="checkbox" value="pork">
+    <label>6</label><br>
+    <input type="reset"><br> 
+</form>
+
+
+
+
+<script>
+
+function checkCar() {
+    var chosenCar = document.getElementById("carValue").value;
+	
+
+    if (chosenCar == "b") {
+		alert("Correct");
+	}
+
+
+	else {
+		alert("Incorrect");
+	}
+	
+
+	document.getElementById("carDisplay").innerHTML = 
+    "What does css stand for?" + chosenCar;
+
+}
+</script>
+</body>
+</html>

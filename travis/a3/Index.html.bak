@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lesson 4</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<table style="width:60%">
+<tr><!--table row-->
+	<th style="width:40%;">Tag</th>
+	<th style="width:40%;">Definitions</th>
+	<th style="width:40%;">Examples</th>
+	</tr>
+	background-image: url("https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.jpg");
+
+
+<h2>Head</h2>
+<p>Click here to go to <a href="head.html">head</a> page</p>
+
+</body>
+</html>
+
+	<tr>
+	<th>internal CSS</th>
+	<th>Used to define a style for a single html page</th>
+	<th> internal Css </th>
+	</tr>
+
+	<tr>
+	<th> img </th>
+	<th> used to have images </th>
+	<th> <img alt="" style="width:300px;" src="https://www.biographic.com/wp-content/uploads/2022/02/naturepl_01648158.jpg" </th>
+	</tr>
+
+
+
+<tr>
+	 <th>external CSS</th>
+	<th>Is used to make a website look good from a different file in the same folder</th>
+	<th>externall CSS</th>
+	</tr>
+
+	<tr>
+
+
+
+
+
+<tr>
+	<th>&ltstrong&gt </td><!--table data--></th>
+	<th> this makes it bigger</th>
+	<th> strong <th>
+	
+</tr>
+	
+
+	
+
+	
+	
+	
+	
+	
+	
+	  <th></th>
+	  <th></th>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Doodle</title>
+<style>
+canvas {
+    position: absolute;
+    background: grey;
+    top: 0;
+    left: 0;
+}
+</style>
+</head>
+<body>
+<canvas id="aCanvas"><canvas>
+<script>
+
+
+var canvas = document.getElementById("aCanvas");
+var draw = canvas.getContext("2d");
+var mouse = {x: undefined, y: undefined};
+var circleArray = []; // [] is an empty array
+
+// mouse click
+canvas.addEventListener("click", function(evt) {     
+    mouse.x = evt.x;
+    mouse.y = evt.y;
+    console.log(mouse); // see Inspect
+	
+	// create circle on canvas where mouse is clicked
+	/*
+	circleA = new Circle();
+	circleA.x = mouse.x
+	circleA.y = mouse.y
+	*/
+	
+	circleArray.push(new Circle() ); // add new Circle() to array
+	
+	
+});
+
+// showTitle()
+function showTitle() {
+    draw.beginPath();
+    draw.fillStyle = "black";
+    draw.font = "30px Arial";
+    draw.fillText("Doodle", 10, 40);
+    draw.fill();
+}
+
+// fullsize()
+function fullsize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+
+window.addEventListener("resize", function() {
+    fullsize();
+});
+
+fullsize();
+
+
+class Circle {
+    // properties are defined in the constructor
+    constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = 50;
+        this.speedX = 5 - 10 * Math.random(); // -5 to 5
+        this.speedY = 5 - 10 * Math.random();
+        this.color = 360 * Math.random();
+		this.alpha = 1; // 1 = solid, 0 = transparent
+    }
+    
+    drawCircle() {
+        draw.beginPath();
+        draw.fillStyle = "hsla(" + this.color + ", 100%, 50%," + this.alpha + ")";
+		// hsla(hue, saturation%, light%, alpha)
+        draw.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
+        draw.fill();
+    }
+    
+    updateCircle() {
+        // movement algorithm
+        this.x = this.x + this.speedX;
+        this.y = this.y + this.speedY;
+		
+		// size and transparency
+		this.alpha = 0.95 * this.alpha; // always less than 1
+		this.size = 1.01 * this.size; // growing > 1, shrinking < 1
+		
+		this.drawCircle();
+    }
+        
+}
+
+// create circle(s) using Circle class, replaced by circleArray
+/* 
+var circleA = new Circle();
+var circleB = new Circle();
+var circleC = new Circle();
+*/
+
+
+// animate()
+function animate() {
+    // 1. clear
+    draw.clearRect(0, 0, canvas.width, canvas.height);
+  
+    // 2.1 update (includes draw)
+    // circleA.updateCircle(); circleB.updateCircle(); circleC.updateCircle();
+	for (var i = 0; i < circleArray.length; i = i + 1) {
+		// do the following things for each circle in circleArray
+		circleArray[i].updateCircle();
+	}
+
+    // 2.2 showTitle() here so that it does not get hidden by circles
+    showTitle();
+    
+    // 2.3. reset mouse
+    mouse.x = undefined;
+    mouse.y = undefined;
+    
+    // 3. repeat
+    requestAnimationFrame(animate);
+}
+
+animate();
+
+</script>
+</body>
+</html>
+
+
+

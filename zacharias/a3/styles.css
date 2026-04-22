@@ -1,0 +1,44 @@
+body {
+	background-image: url("Destroyedcity.jpg");
+	background-repeat: no-repeat;
+	background-size: 120%; 
+	font-family: "Comic Sans MS";
+	margin: 100px 50px;
+	background-color: black;
+	font-family: Verdana;
+	
+}
+
+	div {
+	padding: 50px;
+	background: rgba(0, 0, 0, 0.5);
+	
+	color: white;
+}
+
+
+table, th, td{
+	border: 4px solid 
+	
+}
+table{
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+	text-align: center;
+}
+
+a{
+	color: yellow;
+	
+}
+
+a:hover{
+	color: orange;
+}
+
+h1{
+	color: white;
+}

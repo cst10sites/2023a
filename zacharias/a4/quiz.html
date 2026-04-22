@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+</head>
+<body>
+<h1>Quiz</h1>
+<h3><a target="" href="index.html">Cookie clicker</a></h3>
+<form >
+    <label>What does CSS stand for?</label><br>
+    <input type="radio" value="Computer" name="group">
+    <label>Computer Style Sheets</label><br>
+    <input type="radio" value="Creative" name="group">
+    <label>Creative Style Sheets</label><br>
+    <input type="radio" value="Cascading" name="group" id="check">
+    <label>Cascading Style Sheets</label><br>
+	<input type="radio" value="color" name="group">
+	<label>Color Style Sheets</label><br>
+    <input type="reset"><br> 
+	<input type="button" value="Submit" onclick="checkChoice();"> 
+</form>
+
+<script>
+function checkChoice() {
+	var chosenChoice = document.getElementById("check").checked;
+	if (chosenChoice == true) {
+		alert("CORRECT!!!")
+	}
+
+	else {
+		alert("WRONG!!")
+	}
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+body {
+	background-color: black;
+	background-image: url("https://faithwilson.com/wp-content/uploads/sites/11/2015/04/Southlands_044A4409_2200px.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%; 
+	/*NEW:*/ background-attachment: fixed;
+	color: Black;
+	font-family: "Comic Sans MS";
+	margin: 100px 25px;
+}
+
+h1 {
+	-webkit-text-stroke: 1px white;
+}
+
+div {
+	padding: 50px;
+	background: rgba(0, 0, 80, 0.5);
+	/* rgba(White, Alpha/Opacity) */
+	color: white;
+}
+
+<img alt="" style="width:50;" src =https://faithwilson.com/wp-content/uploads/sites/11/2015/04/Southlands_044A4409_ </img>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

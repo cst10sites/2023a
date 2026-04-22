@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+body{
+	background-image: url(https://images-gmi-pmc.edge-generalmills.com/087d17eb-500e-4b26-abd1-4f9ffa96a2c6.jpg);
+	background-repeat: no-repeat;
+	background-size: 150%; 
+	font-family: "Comic Sans MS";
+	margin: 80px 50px;
+	background-color: beige;
+	font-family: Verdana;
+	
+}
+a{
+	color: yellow;
+}
+div {
+	padding: 25px;
+	background: rgba(0, 0, 0, 0.5);
+	
+	color: white;
+}
+
+
+</style>
+</head>
+<body>
+
+<h1>Cookie Clicker Game</h1>
+<div>
+<h3><a target="" href="quiz.html">Quiz</a></h3>
+<p>Click the cookie as fast as you can to see how fast your CPS is.</p>
+<input style="width:15%;" type="image" src="https://pngimg.com/uploads/cookie/cookie_PNG13680.png" onclick="updateCPS();" class="center">
+<br>
+<button onclick="resetWatch();">Reset</button>
+<h3>Your CPS</h3><h3 id="cps"></h3>
+<H3>Current Clicks:</h3><h3 id="display"></h3>
+<h3>Time Elapsed:</h3><h3 id="timeElapsed"></h3>
+
+
+<script>
+
+var startTime = new Date();
+var nClicks = 0; 
+
+function resetWatch() {
+	window.location.reload();
+}
+
+function updateCPS() {
+	if (nClicks == 0) {
+		
+		startTime = new Date();
+		nClicks = nClicks +1;
+		document.getElementById('display').innerHTML = nClicks;
+		document.getElementById('cps').innerHTML = CPS;
+		document.getElementById('timeElapsed').innerHTML = timeElapsed / 1000;
+		
+	}	
+	else {
+		var currentTime = new Date();
+		var timeElapsed = (currentTime - startTime);
+		document.getElementById('timeElapsed').innerHTML = timeElapsed / 1000;
+		var CPS = nClicks / (timeElapsed / 1000);
+		document.getElementById('cps').innerHTML = CPS;
+		document.getElementById('display').innerHTML = nClicks;
+		nClicks = nClicks + 1;
+	}
+}
+
+
+
+setInterval(updateTime, 100);
+
+function updateTime(){
+	if (nClicks > 0){
+		var currentTime = new Date();
+		var timeElapsed = (currentTime - startTime) / 1000;
+		document.getElementById("timeElapsed").innerHTML = timeElapsed;
+	}
+}
+
+</script>
+</div>
+</body>
+</html>
