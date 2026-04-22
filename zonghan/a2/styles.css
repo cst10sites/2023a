@@ -1,0 +1,25 @@
+
+
+body {
+	background-color: black;
+	background-image: url("https://blogscdn.thehut.net/app/uploads/sites/478/2019/02/Protein-Pancakes-FEATURE-10_1577795147.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%; 
+	background-attachment: fixed;
+	color: darkblue;
+	font-family:Trebuchet MS;
+	margin: 100px 25px;
+}
+
+h1 {
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: white;	
+}
+
+div {
+	padding: 50px;
+	background: rgba(100, 100, 100, 0.5);
+	/* rgba(Red, Green, Blue, Alpha/Opacity) */
+	color: BlanchedAlmond;
+}
+

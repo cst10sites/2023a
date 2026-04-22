@@ -1,0 +1,22 @@
+
+
+body {
+	background-image: url("iStock-1322201350.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%; 
+	background-attachment: fixed;
+	color: green;
+	font-family:Trebuchet MS;
+}
+
+h1 {
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: white;	
+}
+
+div {
+	padding: 25px;
+	background: rgba(100, 100, 100, 0.5);
+	/* rgba(Red, Green, Blue, Alpha/Opacity) */
+	color: BlanchedAlmond;
+}

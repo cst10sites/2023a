@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="icon" type="image/x-icon" href="cookie.ico">
+<style>
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+body {
+	background-color: beige;
+	text-align: center;
+	font-family: "Lexend Deca", sans-serif;
+	mix-blend-mode: multiply;
+
+}
+</style>
+</head>
+
+<body>
+
+<h1>Cookie Clicker</h1>
+<p>Click the cookie as fast as you can and see the average amount of clicks you have in seconds.</p>
+<button onclick="resetWatch()">Reset</button>
+<h2> Clicks per Second:<span id = "display"> </span></h2>
+<h2>Total Clicks: <span id = "display3"> </span></h2>
+<h2>StopWatch:<span id ="display2"> </span></h2>
+<input type="image" src="cookie.png" alt="cookie" onclick = "updateCPS();">
+
+
+
+
+
+<script>
+function resetWatch() { window.location.reload(); } 
+var nClicks = 0;
+var currentTime = new Date() 
+
+function updateCPS() { 
+	if (nClicks == 0) { startTime = new Date(); 
+	nClicks++; } 
+	
+	else { 
+		var currentTime = new Date(); 
+		var timeElapsed = currentTime - startTime;
+		document.getElementById('display2').innerHTML = timeElapsed / 1000; 
+		var CPS = nClicks / (timeElapsed / 1000); 
+		document.getElementById('display').innerHTML = CPS; nClicks++; 
+		document.getElementById('display3').innerHTML = nClicks; } 
+
+	}
+	
+</script>
+</body>
+</html>

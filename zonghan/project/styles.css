@@ -1,0 +1,244 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: SourceSansPro,sans-serif;
+	color:black
+}
+nav{
+	background: black;
+	height: 80px;
+	width: 100%;
+}
+label.logo{
+	color: white;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+
+}
+
+nav ul{
+	float: right;
+	margin-right: 20px;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 10px;
+
+}
+nav ul li a{
+	color: white;
+	font-size: 15px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+
+a.active,a:hover{
+	background: gray;
+}
+
+h1 {
+	font-size: 30px;
+	color:black 
+}
+
+
+h2 {
+ font-size: 32px;
+font-weight: lighter;
+
+}
+/*
+.header {
+	padding: 45px;
+	margin: auto;
+	background:#F5F5F5;
+}
+*/
+.name {
+	position:absolute;
+	left: 1%;
+	bottom: 89%;
+}
+
+  
+li {
+	font-family: sans-serif
+	
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#000000; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
+.section {
+	width: 750px;
+	padding: 50px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: justify;
+
+}
+
+.section p {
+	margin: 10px 0 40px;
+	 font-family:sans-serif ;
+	 font-size: 16px;
+	color:black;
+	opacity: 0.6;
+	font-weight: bold;
+	
+
+}
+
+ 
+.sectionB {
+	width: 750px;
+	padding: 50px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: justify;
+
+}
+
+.sectionB p {
+	margin: 10px 0 40px;
+	 font-family:sans-serif ;
+	 font-size: 16px;
+	color:black;
+	opacity: 0.6;
+	font-weight: bold;
+	
+
+}
+
+.sectionC {
+	width: 750px;
+	padding: 50px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: justify;
+
+}
+
+.sectionC p {
+	margin: 10px 0 40px;
+	 font-family:sans-serif ;
+	 font-size: 16px;
+	color:black;
+	opacity: 0.6;
+	font-weight: bold;
+	
+
+}
+
+.sectionC ul li {
+	font-family: palatino,serif;
+	font-size: 20px;
+
+}
+
+.sectionD {
+	width: 750px;
+	padding: 50px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 115%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: justify;
+
+}
+
+.sectionD p {
+	margin: 10px 0 40px;
+	 font-family:sans-serif ;
+	 font-size: 16px;
+	color:black;
+	opacity: 0.6;
+	font-weight: bold;
+	
+
+}
+
+.sectionJS {
+	width: 900px;
+	padding: 50px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: justify;
+	background-color: lightblue;
+
+}
+
+.sectionJS label {
+	margin: 10px 0 40px;
+	 font-family:sans-serif ;
+	 font-size: 24px;
+	color:black;
+	opacity: 0.6;
+	font-weight: bold;
+	
+
+}
+.sectionJS h3 {
+	font-size: 30px;
+}
+
+.sectionJS h1 {
+	font-size: 45px;
+}
+
+.sectionJS input {
+	font-size: 20px;
+}
+
+
+.contents {
+	position: absolute;
+	left: 8%;
+	bottom: 50%;
+	
+  }
+
+
+.hrline {
+	border-bottom: 0,5px solid #000000;
+	display:block;
+}
+
+.vrline {
+	border-right: 1px solid black;
+	display: block;
+	
+}
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4 Part B</title>
+</head>
+<body>
+
+<h1>Single Question Quiz</h1>
+
+
+
+<!--Example 2-->
+<h3>Radio Buttons</h3>
+<form>
+    <label>Which language uses &lt;!----&gt; to create a comment?</label><br>
+    <input id="correctLang" type="radio" value="HTML" name="group">
+    <label>HTML</label><br>
+    <input type="radio" value="CSS" name="group">
+    <label>CSS</label><br>
+    <input type="radio" value="JavaScript" name="group">
+    <label>JavaScript</label><br>
+    <input type="button" value="Submit" onclick="checkLang();"><br> 
+	<input type="reset"><br> 
+</form>
+
+
+
+
+<!---JavaScript-->
+<script>
+
+function checkLang() {
+	var correctAnswer = document.getElementById("correctLang").checked;
+	// alert(correctAnswer); true or false
+	
+	if (correctAnswer == true) {
+		alert("You are correct!");
+	}
+	else {
+		alert("Wrong!");
+	}
+	
+}
+
+</script>
+</body>
+</html>
+
+
+
+
