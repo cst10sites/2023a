@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 1</title>
+</head>
+<body>
+<!--code goes here!-->
+<h1>About Me</h1>
+<p>Hello, I am Newton. I am a Student here at Mr Kam's Computer Studies. You might be wondering a little bit about me.
+I hold a dear interest towards Politics and History, combined with another interest within the amazing world of Star Wars.
+ I have been a scholar of Canon Star Wars Lore for years, and I have been trying to expand into Star Wars Legends whilst trying to keep up with the new releases of Disney.
+ With Politics, I have been studying politics for over a year now, and lately one of the biggest authors I take inspiration and some ideas from is Hans-Hermann-Hoppe,
+ the author of the book <a target="_blank" href="https://mises.org/library/democracy-god-failed-1"> Democracy: The God That Failed. </a>
+ I am taking Computer Studies as my Foster Dad said I should take it, and although I was intending on taking Drama; I only had two electives;
+  the other already taken by Spanish. As much as I love Drama, I chose to instead follow the suggestion of my Foster Dad as I believed Computer Studies would help success
+  in my future more than drama; further proven by a memory I have in which a Career Education assignment stated computer related jobs were some of the most available jobs
+  in the area. </p>
+<a target="_blank" href="https://mises.org/profile/hans-hermann-hoppe"> <img style="width:40%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Hans-Hermann-Hoppe.jpg/220px-Hans-Hermann-Hoppe.jpg" alt="Hoppe"> </a>
+<h2 id="ticker"><strong>Check out my<a target="_blank" href="https://www.youtube.com/channel/UCjRwq397FKaSUw86YYGWvww">Youtube Channel</a></strong></h2>
+<p> I, <i><u><strong>Newton</strong></u></i>, fully acknowledge that all homepage files must be renamed to index.html. I have tested this website on
+<a target="_blank" href="https://tinyurl.com/cst10sites"> <u> https://tinyurl.com/cst10sites </u> </a> and will also do so with upcoming assignments.
+My code has been checked on <a target="_blank" href="https://validator.w3.org/"> <u> https://validator.w3.org/ </u> </a> and has been corrected. Failure to do so will result in severe loss of marks. </P>
+
+<script>
+var tWidth='300px';                  // width (in pixels)
+var tHeight='25px';                  // height (in pixels)
+var tcolour='#ffffcc';               // background colour:
+var moStop=true;                     // pause on mouseover (true or false)
+var fontfamily = 'algerian'; // font for content
+var tSpeed=3;                        // scroll speed (1 = slow, 5 = fast)
+
+// enter your ticker content here (use \/ and \' in place of / and ' respectively)
+var content='Check out my <a target="_blank" href="http:\/\/www.youtube.com/channel/UCjRwq397FKaSUw86YYGWvww\/">Youtube Channel<\/a>.';
+
+var cps=-tSpeed; var aw, mq; var fsz = parseInt(tHeight) - 4; function startticker(){if (document.getElementById) {var tick = '<div style="position:relative;width:'+tWidth+';height:'+tHeight+';overflow:hidden;background-color:'+tcolour+'"'; if (moStop) tick += ' onmouseover="cps=0" onmouseout="cps=-tSpeed"'; tick +='><div id="mq" style="position:absolute;right:0px;top:0px;font-family:'+fontfamily+';font-size:'+fsz+'px;white-space:nowrap;"><\/div><\/div>'; document.getElementById('ticker').innerHTML = tick; mq = document.getElementById("mq"); mq.style.right=(10+parseInt(tWidth))+"px"; mq.innerHTML='<span id="tx">'+content+'<\/span>'; aw = document.getElementById("tx").offsetWidth; lefttime=setInterval("scrollticker()",50);}} function scrollticker(){mq.style.right = (parseInt(mq.style.right)>(-10 - aw)) ?
+mq.style.right = parseInt(mq.style.right)+cps+"px": parseInt(tWidth)+10+"px";} window.onload=startticker;
+</script>
+</body>
+</html>
